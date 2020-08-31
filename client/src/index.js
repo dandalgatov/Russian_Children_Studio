@@ -1,9 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter } from 'react-router-dom'
+
+import App from './App.jsx';
+
 import './index.css';
-import 'semantic-ui-css/semantic.min.css'
-import App from './App';
-import {BrowserRouter} from 'react-router-dom'
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+// import 'semantic-ui-css/semantic.min.css'
+
+
 
 ReactDOM.render(
   <BrowserRouter>

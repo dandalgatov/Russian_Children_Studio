@@ -1,0 +1,40 @@
+.slider div {
+    width: 50%;
+    height: 20vh;
+}
+
+.slider img {
+    width: 50%;
+    height: auto;
+}
+
+.mission-body {
+    display: flex;
+    width: 100%;
+}
+
+.basics {
+    margin-top: 1rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    text-align: left;
+}
+
+.basics-section {
+    margin-top: 1rem;
+}
+
+.wwwwwh {
+    position: absolute;
+    vertical-align: center;
+    font-family: FranklinGothicITC;
+    font-weight: 900;
+    font-size: 4rem;
+    color: #c6c6c1;
+    margin-top: -1.5rem;
+    z-index: -1;
+}
+
