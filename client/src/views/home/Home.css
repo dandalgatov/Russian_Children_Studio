@@ -1,0 +1,28 @@
+.programs {
+    /* height: auto; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+/* .offering {
+    background-color: #c6c6c1;
+    height: auto;
+    width: 45%;
+    z-index: -2;
+} */
+
+.wwwwwh-home {
+    position: absolute;
+    vertical-align: center;
+    font-family: FranklinGothicITC;
+    font-weight: 900;
+    font-size: 4rem;
+    color: white;
+    margin-top: -2.5rem;
+    z-index: -1;
+}
+
+/* .offering-text {
+    z-index: -1;
+} */

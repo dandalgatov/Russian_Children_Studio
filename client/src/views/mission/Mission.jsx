@@ -17,7 +17,7 @@ export default function Mission() {
         arrows: false,
         autoplaySpeed: 6000,
         useCSS: true,
-    };
+    }
 
 
     return (

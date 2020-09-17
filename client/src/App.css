@@ -1,9 +1,9 @@
 .App {
-  text-align: center;
-  /* font-family: 'FranklinGothicITC Book', Arial, sans-serif;
+  text-align: left;
+  font-family: 'FranklinGothicITC Book', Arial, sans-serif;
   font-weight: normal;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; */
+  -moz-osx-font-smoothing: grayscale;
 }
 
