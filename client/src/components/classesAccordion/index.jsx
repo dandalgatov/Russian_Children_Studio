@@ -15,7 +15,7 @@ const header =
   <div>
     <img src={Vinni} style={{height: '30px'}} alt="Vinni Pooh"/>
     {/* <HomeOutlined />  */}
-    <span style={{paddingLeft: '10px'}}>4 Y.O. | IN PERSON | Winnie the Pooh / «Винни-Пухи» | Maria B. | MON. WED. FRI. | First day:    September 7, 2020</span>
+    <span style={{paddingLeft: '10px'}}>4 Y.O. | IN PERSON | Winnie the Pooh / «Винни-Пухи» </span>
   </div>
 
 

@@ -42,7 +42,6 @@ export default function DesktopMenu() {
                 <TabPane tab="Events" key="events" ><NewsAlert /></TabPane>
                 <TabPane tab="Calendar" key="calendar" ><NewsAlert /></TabPane>
                 <TabPane tab="Contact" key="contact" ><NewsAlert /></TabPane>
-                <TabPane tab="Register" key="register" ><NewsAlert /></TabPane>
             </Tabs>
         </>
     )

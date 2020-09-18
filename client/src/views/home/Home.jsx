@@ -26,7 +26,10 @@ export default function Home() {
 
     return (
         <>
+
+            
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+
                 <Slider {...settings} style={{ width: '49%'}} >
                     <img src={Slide1} alt='gallery slide' style={{ height: 'auto', width: '100%' }} />
                     <img src={Slide2} alt='gallery slide' style={{ height: 'auto', width: '100%' }} />
