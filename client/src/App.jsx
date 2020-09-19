@@ -38,6 +38,7 @@ export default function App() {
                     activeMenu={activeMenu}
                     setActiveMenu={setActiveMenu}
                 />
+                <div style={{height: '10px'}}/>
                 <Switch >
                     <Route exact path="/"
                         render={() =>

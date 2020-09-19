@@ -56,7 +56,6 @@ export default function Online() {
           </Descriptions>
         </Col>
 
-
         <Col  span={14}>
           <ReactPlayer
             width='100%'

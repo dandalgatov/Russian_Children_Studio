@@ -2,7 +2,15 @@ import React from 'react'
 import Slider from "react-slick";
 import './Home.css'
 
-import { DatePicker } from 'antd';
+import 'antd/dist/antd.css';
+
+import Bell from '../../assets/icons/bell.svg'
+
+import { Carousel } from 'antd'
+
+import { NotificationFilled, EllipsisOutlined, BellOutlined } from '@ant-design/icons';
+import { Descriptions, PageHeader, Menu, Dropdown, Button, Tag, Typography, Row, Badge, Col  } from 'antd';
+
 
 import Slide1 from '../../assets/images/mission_slider_img1.jpg'
 import Slide2 from '../../assets/images/mission_slider_img2.jpg'
@@ -24,20 +32,80 @@ export default function Home() {
         // adaptiveHeight: true
     };
 
+    const onChange = (a, b, c) => {
+        console.log(a, b, c);
+      }
+      
+      const carouselStyle = {
+          height: '100%',
+          width: '100%',
+        color: '#000',
+        lineHeight: '160px',
+        textAlign: 'center',
+      }
+
     return (
         <>
 
-            
-            <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                <Carousel afterChange={onChange} dotPosition='bottop' style={{height: '160px'}}>
 
-                <Slider {...settings} style={{ width: '49%'}} >
+                <div style={{carouselStyle}}>
+                    <img src={Slide1} alt="Slide1" style={{carouselStyle}}/>
+                </div>
+                <div >
+                    <img src={Slide2} alt="Slide2" style={{carouselStyle}}/>
+                </div>
+                <div>
+                    <img src={Slide4} alt="Slide4"/>
+                </div>
+                <div>
+                    <img src={Slide5} alt="Slide5"/>
+                </div>
+            </Carousel>
+
+            {/* <Row gutter={[12, 12]}>
+                <Col span={10}>
+                    <Descriptions vertical>
+                        <Descriptions.Item label="WHO" span={3}>
+                            Children 7-8 Y.O.
+        </Descriptions.Item>
+                        <Descriptions.Item label="WHERE" span={3}>
+                            Residing IN/CLOSE to NYC (Tri-State area)
+        </Descriptions.Item>
+                        <Descriptions.Item label="WHEN" span={24}>
+                            Academic Year 2020-2021
+        </Descriptions.Item>
+                        <Descriptions.Item label="WHY" span={24}>
+                            Designed for children who can visit the studio once in a while, but live too far to attend our 'in-person' program regularly. Full benefit of our program in a flexible format.
+        </Descriptions.Item>
+                        <Descriptions.Item label="PRE-REQUISITES" span={24}>
+                            age-appropriate reading and writing skills in Russian
+        </Descriptions.Item>
+                        <Descriptions.Item label="REGISTER" span={3}>
+                            <Badge status="processing" text="SEP-DEC SEMESTER IS LIVE" /><br />
+                            <a href='mailto:office@russianchildrenstudio.org'>office@russianchildrenstudio.org</a>
+                        </Descriptions.Item>
+                    </Descriptions>
+                </Col>
+
+                <Col span={14}>
+
+                </Col>
+            </Row> */}
+
+
+
+
+            {/* <div style={{ display: 'flex', justifyContent: 'space-between' }}> */}
+
+                {/* <Slider {...settings} style={{ width: '49%' }} >
                     <img src={Slide1} alt='gallery slide' style={{ height: 'auto', width: '100%' }} />
                     <img src={Slide2} alt='gallery slide' style={{ height: 'auto', width: '100%' }} />
                     <img src={Slide4} alt='gallery slide' style={{ height: 'auto', width: '100%' }} />
                     <img src={Slide5} alt='gallery slide' style={{ height: 'auto', width: '100%' }} />
-                </Slider>
+                </Slider> */}
 
-                <div className='mission-body' style={{ flexDirection: 'column', width: '50%', padding: '1%' }}>
+                {/* <div className='mission-body' style={{ flexDirection: 'column', width: '50%', padding: '1%' }}>
                     <div className='basics'>
                         <div >
                             <h1 className='wwwwwh'>what</h1>
@@ -78,7 +146,7 @@ export default function Home() {
 
 
 
-            </div>
+            </div> */}
 
         </>
     )
