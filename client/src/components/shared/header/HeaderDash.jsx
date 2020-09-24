@@ -1,6 +1,6 @@
 import React from 'react'
 import EngLogo from '../../../assets/icons/RCS_logo.svg'
-import { Row, Col, Button, Switch, Badge } from 'antd';
+import { Row, Col, Button, Switch, Badge, notification } from 'antd';
 import {
     MailOutlined,
     FacebookOutlined,
@@ -11,6 +11,15 @@ import {
 
 export default function HeaderDash(props) {
     const { mobileMenu, setShowDrawer } = props
+
+    const openNotification = () => {
+        notification.open({
+            message: 'NEWS',
+            description:
+                'The Russian Children Studio will open for in-person, blended and fully remote learning in September, 2020 and will follow the State and NYC guidelines.',
+        });
+    };
+
     return (
         <>
             <Row
@@ -35,6 +44,7 @@ export default function HeaderDash(props) {
                     <Row align="middle" justify="space-between">
                         <Badge dot offset={[-25, 7]} >
                             <Button type="link" size='middle'
+                                onClick={openNotification}
                                 icon={
                                     <BellFilled
                                         style={{

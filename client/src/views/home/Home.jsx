@@ -15,7 +15,7 @@ export default function Home() {
 
             <Row gutter={[24, 24]}>
 
-                <Col  sm={24} md={10} >
+                <Col sm={24} md={10} >
 
                     <Card bordered={false} style={{
                         height: '100%',
@@ -40,7 +40,7 @@ export default function Home() {
                     </Card>
                 </Col>
 
-                <Col sm={24} md={14} 
+                <Col sm={24} md={14}
                     style={{
                         height: 'auto',
                         display: 'flex',
@@ -70,18 +70,29 @@ export default function Home() {
             </Row>
             <Card bordered={false}>
                 <Collapse
-                defaultActiveKey={['1', '2']}
-                expandIconPosition={'right'}
-            >
-                <Panel style={{ textAlign: 'left' }} header='Children Learning Center' key="1">
-                    <div>''</div>
-                </Panel>
-                <Panel header='Events' key="2">
-                    <div>'</div>
-                </Panel>
-            </Collapse>
+                    className='fg900'
+                    defaultActiveKey={['1', '2']}
+                    expandIconPosition={'right'}
+                >
+                    <Panel header='Children Learning Center' key="1">
+                        <p className='book'>
+                            WHAT: comprehensive  programs, which include Russian Language, Literature,Logics. Art and World History, Natural Science, Theatre, Visual Arts, Performing Arts <br/>
+                            WHO: *children 1.5-4 years old (morning programs)<br/>
+                            *children 4-17 years old (afternoon programs)<br/>
+                            *NEW! online program with 4 in-person meetings<br/>
+                            *NEW! joint learning programs (during the 2020 pandemic)<br/>
+                            WHEN: New York City academic year (September - June)
+
+                        </p>
+                    </Panel>
+                    <Panel header='Events' key="2">
+                        <p className='book'>
+                        Twice a year, our Studio produces and presents large-scale theatre productions in December and June, which involves most of the Studio students.
+                        </p>
+                    </Panel>
+                </Collapse>
             </Card>
-            
+
 
             <Row>
 

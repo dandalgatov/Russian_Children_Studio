@@ -14,6 +14,7 @@ export default function Header() {
 
     useEffect(() => {
         setDesktopMenu(window.innerWidth > 767)
+        setMobileMenu(window.innerWidth < 767)
         document.addEventListener('scroll', () => {
             setMobileMenu(window.innerWidth < 767 || window.scrollY > 0)
         })

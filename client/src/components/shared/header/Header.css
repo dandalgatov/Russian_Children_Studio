@@ -5,21 +5,12 @@
   font-size: 1rem;
 }
 
-.ant-menu-submenu {
-  color: #768E8A !important; 
-}
 
-/* .ant-menu-item {
-  color: #768E8A !important; 
-} */
 
 .ant-menu-item-selected {
 	background: transparent;
 }
 
-::selection{
-  background: green; /*Overriden property*/
-}
 
 .ant-menu-submenu-selected{
   border-bottom: 2px solid #768E8A;
