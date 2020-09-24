@@ -1,7 +1,60 @@
-.ant-tabs-tab {
+
+
+
+.ant-menu {
+  font-size: 1rem;
+}
+
+.ant-menu-submenu {
+  color: #768E8A !important; 
+}
+
+/* .ant-menu-item {
+  color: #768E8A !important; 
+} */
+
+.ant-menu-item-selected {
+	background: transparent;
+}
+
+::selection{
+  background: green; /*Overriden property*/
+}
+
+.ant-menu-submenu-selected{
+  border-bottom: 2px solid #768E8A;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover, 
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active, 
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active, 
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open, 
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open, 
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, 
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
+  border-bottom: 2px solid #768E8A;
+  color: #768E8A !important; 
+}
+
+.ant-menu-item:hover, .ant-menu-item-active, .ant-menu:not(.ant-menu-inline) .ant-menu-submenu-open, .ant-menu-submenu-active, .ant-menu-submenu-title:hover {
+  color: #768E8A !important;
+}
+
+
+
+.ant-menu-submenu-popup {
+  color: #768E8A !important; 
+}
+
+
+
+/* .ant-tabs-tab {
   color: #768E8A !important; 
   padding: 5px !important;
-}
+} */
+
+
 
 .ant-tabs-tab-active {
   color: #768E8A !important; 
@@ -11,13 +64,71 @@
 
 .ant-tabs-tab-btn {
   color: #768E8A !important; 
-  
-
 }
 
 .ant-tabs-ink-bar {
   /* position: absolute; */
   background: #768E8A !important;
+}
 
-  
+
+
+.ant-menu-submenu-arrow{
+  display: none;
+}
+
+.ant-menu {
+  margin-top: 2vh;
+  margin-bottom: 1vh;
+}
+
+
+.ant-drawer-header, .ant-menu {
+  border: 0px;
+
+}
+
+.ant-drawer-header {
+  padding: 2vh;
+}
+
+.ant-menu-inline {
+  /* display: flex;
+  flex-flow: column nowrap;
+  align-content: center; */
+  padding-top: 10vh;
+}
+
+
+.ant-anchor-ink {
+  display: none;
+}
+
+.navbar {
+  width: 100%;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  transition: top 0.6s;
+}
+
+.navbar--hidden {
+  top: -50px;
+}
+
+.ant-ribbon {
+  top: 2vh;
+}
+
+
+.mobile-menu-visible{
+  font-size: 54px;
+  color: #708A86;
+  transition: font-size .5s ease;
+}
+
+.mobile-menu-hidden{
+  font-size: 0px;
+  color: #708A86;
+  transition: font-size .5s ease;
 }

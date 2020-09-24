@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Switch, Route } from 'react-router-dom'
 import './App.css'
 
@@ -21,70 +21,50 @@ import Header from './components/shared/header'
 
 
 
-export default function App() {
-    const [rus, setRus] = useState(false);
-    const [activeMenu, setActiveMenu] = useState('')
 
-    useEffect(() => {
-        setActiveMenu(window.location.pathname);
-    }, [])
+export default function App() {
 
     return (
-        <div className='App' style={{ display: 'flex', justifyContent: 'center' }}>
-            <div style={{ width: '90%', maxWidth: '1440px' }}>
-                < Header
-                    isOn={rus}
-                    handleToggle={() => setRus(!rus)}
-                    activeMenu={activeMenu}
-                    setActiveMenu={setActiveMenu}
-                />
-                <div style={{height: '10px'}}/>
+        <div className='App'>
+            <div className='app-container'>
+                < Header />
                 <Switch >
                     <Route exact path="/"
                         render={() =>
                             <Home />
                         } />
-
                     <Route exact path="/about"
                         render={() =>
                             <About />
                         } />
-
                     <Route exact path="/mission"
                         render={() =>
                             <Mission />
                         } />
-
                     <Route exact path="/our_team"
                         render={() =>
                             <OurTeam />
                         } />
-
                     <Route exact path="/clc"
                         render={() =>
                             <ChildrenLearningCenter />
                         } />
-
                     <Route exact path="/online"
                         render={() =>
                             <Online />
                         } />
-
                     <Route exact path="/events"
                         render={() =>
                             <Events />
                         } />
-
                     <Route exact path="/calendar"
                         render={() =>
                             <Calendar />
                         } />
-
                     <Route exact path="/contact"
                         render={() =>
                             <Contact />
                         } />
-
                     <Route exact path="/register"
                         render={() =>
                             <Register />

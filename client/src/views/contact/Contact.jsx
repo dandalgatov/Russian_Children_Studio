@@ -1,29 +1,28 @@
 import React from 'react'
-import { Alert } from 'antd';
-import { LoadingOutlined  } from '@ant-design/icons';
+import { Row, Col } from 'antd';
 
 export default function Contact() {
     return (
-        <div>
-            <h1 style={{paddingLeft: '12px'}}>CONTACT PAGE UNDER CONSTRUCTION</h1>
-            <Alert type="info" showIcon
-                style={{
-                    backgroundColor: '#fff',
-                    border: 'none',
-                    height: '2rem',
-                    display: 'flex',
-                    alignItems: 'center',
-                    color: '#768E8A'
-                }}
-
-                icon={<LoadingOutlined  style={{
-                    fontSize: '22px',
-                    color: '#768E8A',
-                    top: '5px',
-                    left: '10px'
-                }} />}
-                message="We'll announce when this section goes live!"
-            />
-        </div>
+        <>
+            <Row gutter={[24,24]}>
+                <Col sm={24} md={16}>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3020.441301772124!2d-73.97127938466932!3d40.79629534039132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2f62642afffff%3A0x4f6c0a23d48f9841!2srussian%20children%20studio!5e0!3m2!1sen!2sus!4v1600901611324!5m2!1sen!2sus" width="100%" height="400" frameborder="0" style={{ border: 0 }} allowfullscreen="" aria-hidden="false" tabindex="0" title='iframe' />
+                </Col>
+                <Col sm={24} md={8}>
+                    <div>
+                        <h1 className='fg900'>CALL US</h1>
+                        <p className='fg500'>+1 (917) 324-1740</p>
+                    </div>
+                    <div>
+                        <h1 className='fg900'>WRITE US</h1>
+                        <p className='fg500'>office@russianchildrenstudio.org</p>
+                    </div>
+                    <div>
+                        <h1 className='fg900'>VISIT US</h1>
+                        <p className='fg500'>225 W 99th St, New York, NY 10025</p>
+                    </div>
+                </Col>
+            </Row>
+        </>
     )
 }

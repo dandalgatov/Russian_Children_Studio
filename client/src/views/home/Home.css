@@ -1,9 +1,9 @@
-.programs {
-    /* height: auto; */
+/* .programs {
+    height: auto;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-}
+} */
 
 /* .offering {
     background-color: #c6c6c1;
@@ -12,7 +12,7 @@
     z-index: -2;
 } */
 
-.wwwwwh-home {
+/* .wwwwwh-home {
     position: absolute;
     vertical-align: center;
     font-family: FranklinGothicITC;
@@ -21,8 +21,9 @@
     color: white;
     margin-top: -2.5rem;
     z-index: -1;
-}
+} */
 
 /* .offering-text {
     z-index: -1;
 } */
+

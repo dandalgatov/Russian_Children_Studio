@@ -7,3 +7,107 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+
+
+
+.box-shadow {
+  box-shadow:  
+  0 1px 1px rgba(0,0,0,0.11), 
+  0 2px 2px rgba(0,0,0,0.11), 
+  0 4px 4px rgba(0,0,0,0.11), 
+  0 6px 8px rgba(0,0,0,0.11),
+  0 8px 16px rgba(0,0,0,0.11);
+}
+
+.text-shadow {
+  text-shadow:
+  -4px 3px 0 #3a50d9;
+}
+
+
+
+
+.fg900 {
+  font-family: 'FranklinGothicITC' ;
+  font-weight: 900;
+  font-size: 2rem;
+  color: #CCCDCB;
+  margin: 0;
+
+}
+.fg900i {
+  font-family: 'FranklinGothicITC' ;
+  font-weight: 900;
+  font-size: 2rem;
+  font-style: italic;
+  color: #CCCDCB;
+  margin: 0;
+}
+
+.demi600 {
+  font-family: 'FranklinGothicITC Demi';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1rem;
+}
+.demi600i {
+  font-family: 'FranklinGothicITC Demi';
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.fg500 {
+  font-family: 'FranklinGothicITC' ;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1rem;
+  margin: 0;
+}
+.fg500i {
+  font-family: 'FranklinGothicITC' ;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 1rem;
+  margin: 0;
+}
+
+.book {
+  font-family: 'FranklinGothicITC Book';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  
+}
+.book-b {
+  font-family: 'FranklinGothicITC Book';
+  font-style:  bold;
+  font-weight: normal;
+  font-size: 1rem;
+}
+.book-i {
+  font-family: 'FranklinGothicITC Book';
+  font-style:  italic;
+  font-weight: normal;
+}
+
+
+
+
+/* 
+<i> — was italic, now for text in an “alternate voice”, such as transliterated foreign words, technical terms, and typographically italicized text (W3C:Markup, WHATWG)
+<b> — was bold, now for “stylistically offset” text, such as keywords and typographically emboldened text (W3C:Markup, WHATWG)
+<em> — was emphasis, now for stress emphasis, i.e., something you’d pronounce differently (W3C:Markup, WHATWG)
+<strong> — was for stronger emphasis, now for strong importance, basically the same thing (stronger emphasis or importance is now indicated by nesting) (W3C:Markup, WHATWG) */
+
+.App {
+  display: flex;
+  justify-content: center;
+}
+
+
+.app-container {
+  width: 90%;
+  max-width: 1440px;
+}

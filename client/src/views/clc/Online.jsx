@@ -1,7 +1,7 @@
 import React from 'react'
 import "antd/dist/antd.css";
 import ReactPlayer from 'react-player'
-import { Descriptions, Badge, Row, Col, Collapse, Table } from "antd";
+import { Descriptions, Badge, Row, Col, Collapse, } from "antd";
 const { Panel } = Collapse;
 
 
@@ -31,7 +31,7 @@ export default function Online() {
 
 
 
-      <Row gutter={[12,12]}>
+      <Row gutter={[12, 12]}>
         <Col span={10}>
           <Descriptions bordered>
             <Descriptions.Item label="WHO" span={3}>
@@ -56,7 +56,7 @@ export default function Online() {
           </Descriptions>
         </Col>
 
-        <Col  span={14}>
+        <Col span={14}>
           <ReactPlayer
             width='100%'
             height='100%'
@@ -66,7 +66,7 @@ export default function Online() {
 
       <Row >
         <Col span={24}>
-      <Collapse
+          <Collapse
             defaultActiveKey={['1']}
             onChange={callback}
             expandIconPosition={'right'}
@@ -81,7 +81,7 @@ export default function Online() {
               <div>{text}</div>
             </Panel>
           </Collapse>
-          </Col>
+        </Col>
       </Row>
 
     </div>

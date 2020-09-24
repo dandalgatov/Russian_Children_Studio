@@ -1,6 +1,5 @@
 import React from 'react'
 import { Collapse, Table } from 'antd';
-import { HomeOutlined, UserOutlined, TeamOutlined, CalendarOutlined } from '@ant-design/icons';
 
 import Vinni from '../../assets/images/Vinni.png'
 
