@@ -11,6 +11,7 @@ import ChildrenLearningCenter from './views/clc/ChildrenLearningCenter'
 
 import Calendar from './views/calendar/Calendar'
 import Contact from './views/contact/Contact'
+import HealthForm from './views/healthForm/healthForm'
 
 
 //Componenets
@@ -62,6 +63,10 @@ export default function App() {
                     <Route exact path="/contact"
                         render={() =>
                             <Contact />
+                        } />
+                    <Route exact path="/healthform"
+                        render={() =>
+                            <HealthForm />
                         } />
                     {/* <Route exact path="/register"
                         render={() =>
