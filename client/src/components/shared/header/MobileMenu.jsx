@@ -113,7 +113,7 @@ export default function MobileMenu(props) {
                     mode="inline"
                     onClick={handleClick}
                     defaultOpenKeys={['about']}
-                    style={{ color: '#708A86', margin: '0', padding: '0', width: '100%'}}
+                    style={{ color: '#708A86', display:'grid', margin: '0', padding: '0', width: '100%'}}
                 >
                     <SubMenu key="about" title="About" >
                         <Menu.Item key="mission" style={{ color: '#708A86' }}>Mission</Menu.Item>

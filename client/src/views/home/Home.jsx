@@ -1,12 +1,17 @@
 import React from 'react'
-import { Card, Row, Col, Collapse, } from 'antd';
+import { Card, Col, Collapse, Row } from 'antd';
 import './Home.css'
 import 'antd/dist/antd.css';
 import AntCarousel from '../../components/carousel/AntCarousel'
+import RusLogo from '../../assets/icons/logoRCSrus.svg'
 
 const { Panel } = Collapse;
 
 export default function Home() {
+
+
+    
+
     return (
         <>
             <Card bordered={false}>
@@ -50,17 +55,17 @@ export default function Home() {
                     <Card style={{ height: '100%' }} bordered={false}>
                         <p className='book' style={{ textAlign: 'right' }}>
                             <b style={{ color: '#708A86', paddingRight: '.5em' }}>
-                                Our mission
+                                Our mission 
                             </b>
                         is to inspire bilingual children – Russian-native speakers to achieve literacy and most importantly fall in love with Russian language and culture.<br /><br />
 
                             <b style={{ color: '#708A86', paddingRight: '.5em' }}>
-                                The Studio offers
+                                The Studio offers 
                             </b>
                         a physical and virtual environment for immersion into Russian language and culture, nurturing a sense of community and belonging for all interested families.<br /><br />
 
                             <b style={{ color: '#708A86', paddingRight: '.5em' }}>
-                                Founded almost a decade ago
+                                Founded almost a decade ago 
                             </b>
                         by Maria Bernsteyn in collaboration with Alla Kovgan, our Studio is a
                         501c3 non-profit organization, which consists of the Children Learning Center and Cultural Programs.</p>
@@ -94,9 +99,26 @@ export default function Home() {
             </Card>
 
 
-            <Row>
 
-            </Row>
+
+                <Row justify='space-between' style={{height: '10vh', padding: '0 5vh 0 5vh',}} >
+                <Col className='fg900' sm={24} md={24} lg={12}>
+                
+                    <a href='/contact' style={{ color: '#708A86'}}>Reach out and join us!</a>
+                    </Col>
+                    <Col sm={24} md={24} lg={12}>
+                    <img src={RusLogo} alt="" style={{mahHeight: '5vh', width: '100%' }} />
+                    </Col>
+                </Row>
+
+                
+    
+                
+                
+                {/* Reach out and join us!
+                 <img src={RusLogo} alt="" style={{height: '10vh' , maxWidth: '50%'}} /> */}
+                
+
             <Row>
 
             </Row>

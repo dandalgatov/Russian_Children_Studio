@@ -55,7 +55,7 @@ export default function HeaderDash(props) {
                                 }
                             />
                         </Badge>
-                        <Button type='link' size='middle' target='_blank'
+                        <Button type='link' size='middle' rel="noopener" target='_blank'
                             href='mailto: office@russianchildrenstudio.org'
                             icon={
                                 <MailOutlined
@@ -67,6 +67,7 @@ export default function HeaderDash(props) {
                             }
                         />
                         <Button type='link' size='middle' target='_blank'
+                            rel="noreferrer"
                             href='https://www.facebook.com/Russianchildrenstudio/'
                             icon={
                                 <FacebookOutlined
@@ -78,6 +79,8 @@ export default function HeaderDash(props) {
                             }
                         />
                         <Button type='link' size='middle' target='_blank'
+                            rel="noopener"
+                            
                             href='https://www.instagram.com/russianchildrenstudio/'
                             icon={
                                 <InstagramOutlined
@@ -91,7 +94,8 @@ export default function HeaderDash(props) {
                     </Row>
                     <Row align="middle" justify="end" >
                         <Button className='book-i' type='text' size='small'>eng</Button>
-                        <Switch size='small' style={{ backgroundColor: '#708A86' }} />
+                        <Switch size='small' aria-label='Russian English Language switch'
+                            style={{ backgroundColor: '#708A86' }} />
                         <Button className='book-i' type='text' size='small'>rus</Button>
                     </Row>
                 </Col>
@@ -99,7 +103,7 @@ export default function HeaderDash(props) {
                     <MenuOutlined
                         className={mobileMenu ? 'mobile-menu-visible' : 'mobile-menu-hidden'}
                         onClick={(e) => {
-                            e.preventDefault();
+                            e.preventDefault()
                             setShowDrawer(true)
                         }}
                     />

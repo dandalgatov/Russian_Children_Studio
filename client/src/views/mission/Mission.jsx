@@ -56,8 +56,8 @@ export default function Mission() {
                     </p>
                 </div>
             </div>
-            <div style={{width: '100%', backgroundColor: '#c6c6c1', height: 'auto', fontFamily: 'FranklinGothicITC', fontWeight: '900', color: 'white', fontSize: '1.5rem'}}>
-                    <p>Reach out and join us!</p>
+            <div style={{width: '100%', backgroundColor: '#CCCDCB', height: 'auto', fontFamily: 'FranklinGothicITC', fontWeight: '900', color: 'white', fontSize: '1.5rem'}}>
+                    <p className='fg900'>Reach out and join us!</p>
                 </div>
 
         </div>

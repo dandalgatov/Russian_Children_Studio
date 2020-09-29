@@ -32,8 +32,8 @@ export default function DesktopMenu(props) {
                 <SubMenu key="about" title="About" onTitleClick={handleClick}
                     // style={{ marginLeft: '5px'}}
                 >
-                    <Menu.Item key="mission">Mission</Menu.Item>
-                    <Menu.Item key="team">Team</Menu.Item>
+                    <Menu.Item key="about/#mission">Mission</Menu.Item>
+                    <Menu.Item key="about/#team">Team</Menu.Item>
                 </SubMenu>
                 <Menu.Item key="clc">Children Learning Center</Menu.Item>
                 <Menu.Item key="calendar">Calendar</Menu.Item>
