@@ -1,5 +1,5 @@
 import React from 'react'
-import { useHistory } from "react-router-dom";
+import { useHistory, Redirect } from "react-router-dom";
 import './Header.css'
 import { Menu } from 'antd'
 // import { Badge } from 'antd'
@@ -11,13 +11,16 @@ export default function DesktopMenu(props) {
     const history = useHistory()
 
     const handleClick = e => {
+
         setCurrentKey(e.key)
         history.push(`/${e.key}`)
+        return < Redirect to={`/${e.key}`} />
+
     }
 
     return (
         <div>
-            
+
             {/* <Badge.Ribbon
                 color= '#708A86' text={<>
                 <BellFilled style={{ fontSize: '16px', color: 'gold', paddingTop: '3px', paddingRight: '10px',}} />
@@ -30,7 +33,7 @@ export default function DesktopMenu(props) {
                 mode="horizontal"
             >
                 <SubMenu key="about" title="About" onTitleClick={handleClick}
-                    // style={{ marginLeft: '5px'}}
+                // style={{ marginLeft: '5px'}}
                 >
                     <Menu.Item key="about/#mission">Mission</Menu.Item>
                     <Menu.Item key="about/#team">Team</Menu.Item>
