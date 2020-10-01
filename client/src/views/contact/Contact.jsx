@@ -1,7 +1,9 @@
 import React from 'react'
+import {withRouter} from 'react-router';
+
 import { Row, Col, Card } from 'antd';
 
-export default function Contact() {
+function Contact() {
     return (
         <>
             <Row gutter={[24, 24]}>
@@ -28,3 +30,4 @@ export default function Contact() {
         </>
     )
 }
+export default withRouter(Contact)

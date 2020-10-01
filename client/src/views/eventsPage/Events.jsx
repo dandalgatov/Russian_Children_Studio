@@ -1,8 +1,10 @@
 import React from 'react'
+import {withRouter} from 'react-router';
+
 import { Alert } from 'antd';
 import { BulbOutlined } from '@ant-design/icons';
 
-export default function Events() {
+function Events() {
     return (
         <div>
             <h1>EVENTS PAGE IS UNDER CONSTRUCTION.</h1>
@@ -29,3 +31,4 @@ export default function Events() {
         </div>
     )
 }
+export default withRouter(Events)
