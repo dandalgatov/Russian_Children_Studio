@@ -1,8 +1,6 @@
 import React from 'react'
 import { Collapse, Table } from 'antd';
 
-import Vinni from '../../assets/images/Vinni.png'
-
 const { Panel } = Collapse;
 
 
@@ -12,7 +10,7 @@ function callback(key) {
 
 const header =
   <div>
-    <img src={Vinni} style={{height: '30px'}} alt="Vinni Pooh"/>
+  
     {/* <HomeOutlined />  */}
     <span style={{paddingLeft: '10px'}}>4 Y.O. | IN PERSON | Winnie the Pooh / «Винни-Пухи» </span>
   </div>

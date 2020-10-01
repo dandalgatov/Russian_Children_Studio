@@ -14,7 +14,7 @@ export default function Home() {
 
     return (
         <>
-            <Card bordered={false}>
+            <Card bordered={false} bodyStyle={{ height: '100%' }}>
                 <AntCarousel />
             </Card>
 

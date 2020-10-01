@@ -2,10 +2,10 @@ import React from 'react';
 import { Carousel, Row, Col, } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 
-import Slide1 from '../../assets/images/mission_slider_img1.jpg'
-import Slide2 from '../../assets/images/mission_slider_img2.jpg'
-import Slide4 from '../../assets/images/mission_slider_img4.jpg'
-import Slide5 from '../../assets/images/mission_slider_img5.jpg'
+import Slide1 from '../../assets/images/AntCarousel/mission_slider_img1.jpeg'
+import Slide2 from '../../assets/images/AntCarousel/mission_slider_img2.jpeg'
+import Slide4 from '../../assets/images/AntCarousel/mission_slider_img4.jpeg'
+import Slide5 from '../../assets/images/AntCarousel/mission_slider_img5.jpeg'
 
 export default function AntCarousel() {
     const SampleNextArrow = props => <RightOutlined
@@ -46,6 +46,8 @@ export default function AntCarousel() {
     const imgStyle = {
         height: 'auto',
         width: '100%',
+        maxHeight: '640px',
+        maxWidth: '100vw',
     }
 
     return (

@@ -14,7 +14,7 @@ export default function TeamMemberCard(props) {
                     <img
                         // style={{border: '10px solid black'}}
                         alt={user && user.name}
-                        src={user && user.img}
+                        data-opt-src={user && user.img}
                     />
                 }
             >
