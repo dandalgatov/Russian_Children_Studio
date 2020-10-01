@@ -1,5 +1,6 @@
 
 import React from 'react'
+import {withRouter} from 'react-router';
 import { Card, Row, Col } from 'antd';
 import Anya from '../../assets/images/StaffPhotos/Anya.jpeg'
 import Ayna from '../../assets/images/StaffPhotos/Ayna.jpeg'
@@ -16,8 +17,9 @@ import Ayna from '../../assets/images/StaffPhotos/Ayna.jpeg'
 
 
 import TeamMemberCard from '../../components/teamMember/TeamMemberCard'
-export default function About() {
 
+
+function About() {
     const team = [
         {
             name: 'Anya',
@@ -110,3 +112,6 @@ export default function About() {
         </div>
     )
 }
+export default withRouter(About)
+
+

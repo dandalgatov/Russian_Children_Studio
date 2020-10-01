@@ -1,8 +1,10 @@
 import React from 'react'
+import {withRouter} from 'react-router';
+
 
 import ClassesAccordion from '../../components/classesAccordion'
 
-export default function ChildrenLearningCenter() {
+function ChildrenLearningCenter() {
     return (
         <div style={{paddingTop: '12px'}}>
             <ClassesAccordion/>
@@ -10,3 +12,4 @@ export default function ChildrenLearningCenter() {
         </div>
     )
 }
+export default withRouter(ChildrenLearningCenter)

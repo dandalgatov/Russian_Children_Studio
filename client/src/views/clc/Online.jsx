@@ -1,11 +1,13 @@
 import React from 'react'
+import {withRouter} from 'react-router';
+
 import "antd/dist/antd.css";
 import ReactPlayer from 'react-player'
 import { Descriptions, Badge, Row, Col, Collapse, } from "antd";
 const { Panel } = Collapse;
 
 
-export default function Online() {
+function Online() {
 
   function callback(key) {
     console.log(key);
@@ -87,3 +89,4 @@ export default function Online() {
     </div>
   )
 }
+export default withRouter(Online)

@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
+import {withRouter} from 'react-router';
 import { Menu, Row, Col, Card } from 'antd';
 import { CalendarOutlined, AppstoreOutlined } from '@ant-design/icons';
 import './Calendar.css'
 const { SubMenu } = Menu;
 
-export default function Calendar() {
+function Calendar() {
 
     const[ menu, setMenu] = useState('school')
 
@@ -53,3 +54,6 @@ export default function Calendar() {
             </Row>
     )
 }
+
+
+export default withRouter(Calendar)
