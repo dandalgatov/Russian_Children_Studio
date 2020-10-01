@@ -3,15 +3,15 @@ import React from 'react'
 import { Card, Row, Col } from 'antd';
 import Anya from '../../assets/images/StaffPhotos/Anya.jpeg'
 import Ayna from '../../assets/images/StaffPhotos/Ayna.jpeg'
-import Illya from '../../assets/images/StaffPhotos/Illya.jpeg'
-import Luba from '../../assets/images/StaffPhotos/Luba.jpeg'
-import Masha_b from '../../assets/images/StaffPhotos/Masha_b.jpeg'
-import Masha_d from '../../assets/images/StaffPhotos/Masha_d.jpeg'
-import Masha_f from '../../assets/images/StaffPhotos/Masha_f.jpeg'
-import Madya from '../../assets/images/StaffPhotos/Nadya.jpeg'
-import Natasha from '../../assets/images/StaffPhotos/Natasha.jpeg'
-import Nina from '../../assets/images/StaffPhotos/Nina.jpeg'
-import Tonya from '../../assets/images/StaffPhotos/Tonya.jpeg'
+// import Illya from '../../assets/images/StaffPhotos/Illya.jpeg'
+// import Luba from '../../assets/images/StaffPhotos/Luba.jpeg'
+// import Masha_b from '../../assets/images/StaffPhotos/Masha_b.jpeg'
+// import Masha_d from '../../assets/images/StaffPhotos/Masha_d.jpeg'
+// import Masha_f from '../../assets/images/StaffPhotos/Masha_f.jpeg'
+// import Madya from '../../assets/images/StaffPhotos/Nadya.jpeg'
+// import Natasha from '../../assets/images/StaffPhotos/Natasha.jpeg'
+// import Nina from '../../assets/images/StaffPhotos/Nina.jpeg'
+// import Tonya from '../../assets/images/StaffPhotos/Tonya.jpeg'
 
 
 
@@ -95,7 +95,7 @@ export default function About() {
             <Row justify='center' gutter={[16, 16]}>
 
                 {team && team.map((user) =>
-                    <Col xs={24} sm={24} md={12} lg={6} xl={6}>
+                    <Col xs={24} sm={24} md={12} lg={6} xl={6} key={user}>
                         <TeamMemberCard user={user} />
                     </Col>
 
