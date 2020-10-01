@@ -1,18 +1,31 @@
 
 import React from 'react'
 import { Card, Row, Col } from 'antd';
+import Anya from '../../assets/images/StaffPhotos/Anya.jpeg'
+import Ayna from '../../assets/images/StaffPhotos/Ayna.jpeg'
+import Illya from '../../assets/images/StaffPhotos/Illya.jpeg'
+import Luba from '../../assets/images/StaffPhotos/Luba.jpeg'
+import Masha_b from '../../assets/images/StaffPhotos/Masha_b.jpeg'
+import Masha_d from '../../assets/images/StaffPhotos/Masha_d.jpeg'
+import Masha_f from '../../assets/images/StaffPhotos/Masha_f.jpeg'
+import Madya from '../../assets/images/StaffPhotos/Nadya.jpeg'
+import Natasha from '../../assets/images/StaffPhotos/Natasha.jpeg'
+import Nina from '../../assets/images/StaffPhotos/Nina.jpeg'
+import Tonya from '../../assets/images/StaffPhotos/Tonya.jpeg'
+
 
 
 import TeamMemberCard from '../../components/teamMember/TeamMemberCard'
 export default function About() {
+
     const team = [
         {
             name: 'Anya',
-            img: 'https://drive.google.com/uc?export=view&id=1Ri3RPYYq4LvxrRsmNqPAiRJJKhFiOebJ'
+            img: Anya
         },
         {
             name: 'Ayna',
-            img: 'https://drive.google.com/uc?export=view&id=10WosTx7dVDLYgB7IxVeEV8zPqOf3mvP3'
+            img: Ayna
         },
         {
             name: 'Ilya',
@@ -58,40 +71,40 @@ export default function About() {
                 <h1 className='fg900' style={{ textAlign: 'center' }} >MISSION</h1>
             </a>
 
-            <Card style={{ height: '100%', paddingTop: '10vh', paddingBottom: '10vh'}} bordered={false}>
-                        <p className='book' style={{ textAlign: 'center' }}>
-                            <b style={{ color: '#708A86', paddingRight: '.5em' }}>
-                                Our mission
+            <Card style={{ height: '100%', paddingTop: '10vh', paddingBottom: '10vh' }} bordered={false}>
+                <p className='book' style={{ textAlign: 'center' }}>
+                    <b style={{ color: '#708A86', paddingRight: '.5em' }}>
+                        Our mission
                             </b>
                         is to inspire bilingual children – Russian-native speakers to achieve literacy and most importantly fall in love with Russian language and culture.<br />
 
-                            <b style={{ color: '#708A86', paddingRight: '.5em' }}>
-                                The Studio offers
+                    <b style={{ color: '#708A86', paddingRight: '.5em' }}>
+                        The Studio offers
                             </b>
                         a physical and virtual environment for immersion into Russian language and culture, nurturing a sense of community and belonging for all interested families.<br />
 
-                            <b style={{ color: '#708A86', paddingRight: '.5em' }}>
-                                Founded almost a decade ago
+                    <b style={{ color: '#708A86', paddingRight: '.5em' }}>
+                        Founded almost a decade ago
                             </b>
                         by Maria Bernsteyn in collaboration with Alla Kovgan, our Studio is a
                         501c3 non-profit organization, which consists of the Children Learning Center and Cultural Programs.</p>
-                    </Card>
+            </Card>
             <a href="team">
                 <h1 className='fg900' style={{ textAlign: 'center', paddingBottom: '10vh' }} >TEAM</h1>
             </a>
             <Row justify='center' gutter={[16, 16]}>
-           
-                {team && team.map((user) =>
-                <Col xs={24} sm={24} md={12} lg={6} xl={6}>
-                    <TeamMemberCard user={user}></TeamMemberCard>
-                </Col>
-                
-            )}
-            </Row>
-            
-            
 
-           
+                {team && team.map((user) =>
+                    <Col xs={24} sm={24} md={12} lg={6} xl={6}>
+                        <TeamMemberCard user={user} />
+                    </Col>
+
+                )}
+            </Row>
+
+
+
+
 
 
         </div>

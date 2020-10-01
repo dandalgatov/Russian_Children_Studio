@@ -45,9 +45,9 @@ export default function AntCarousel() {
 
     const imgStyle = {
         height: 'auto',
-        width: '100%',
+        width: 'auto',
         maxHeight: '640px',
-        maxWidth: '100vw',
+        maxWidth: '100%',
     }
 
     return (
@@ -59,9 +59,6 @@ export default function AntCarousel() {
                     </div>
                     <div>
                         <img data-opt-src={Slide2} alt='slide2' style={{ ...imgStyle }} />
-                    </div>
-                    <div>
-                        <img data-opt-src={Slide1} alt='slide1' style={{ ...imgStyle }} />
                     </div>
                     <div>
                         <img data-opt-src={Slide4} alt='slide4' style={{ ...imgStyle }} />
