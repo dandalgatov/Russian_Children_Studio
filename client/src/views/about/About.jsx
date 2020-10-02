@@ -2,8 +2,8 @@
 import React from 'react'
 import {withRouter} from 'react-router';
 import { Card, Row, Col } from 'antd';
-import Anya from '../../assets/images/StaffPhotos/Anya.jpeg'
-import Ayna from '../../assets/images/StaffPhotos/Ayna.jpeg'
+// import Anya from '../../assets/images/StaffPhotos/Anya.jpeg'
+// import Ayna from '../../assets/images/StaffPhotos/Ayna.jpeg'
 // import Illya from '../../assets/images/StaffPhotos/Illya.jpeg'
 // import Luba from '../../assets/images/StaffPhotos/Luba.jpeg'
 // import Masha_b from '../../assets/images/StaffPhotos/Masha_b.jpeg'
@@ -23,11 +23,11 @@ function About() {
     const team = [
         {
             name: 'Anya',
-            img: Anya
+            img: 'https://drive.google.com/uc?export=view&id=1Ri3RPYYq4LvxrRsmNqPAiRJJKhFiOebJ'
         },
         {
             name: 'Ayna',
-            img: Ayna
+            img: 'https://drive.google.com/uc?export=view&id=10WosTx7dVDLYgB7IxVeEV8zPqOf3mvP3'
         },
         {
             name: 'Ilya',

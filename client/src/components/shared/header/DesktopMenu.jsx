@@ -13,13 +13,8 @@ export default function DesktopMenu(props) {
     const history = useHistory()
 
     const handleClick = e => {
-
         setCurrentKey(e.key)
         history.push(`/${e.key}`)
-        // <Router>
-        // return <Link to="/SomethingElse">Something else</Link>
-        // </Router>
-
     }
 
     return (

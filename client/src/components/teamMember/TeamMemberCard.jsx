@@ -3,6 +3,7 @@ import { Card } from 'antd';
 const { Meta } = Card;
 
 
+
 export default function TeamMemberCard(props) {
     const { user } = props
     return (
@@ -15,11 +16,11 @@ export default function TeamMemberCard(props) {
                     <img
                         // style={{border: '10px solid black'}}
                         alt={user && user.name}
-                        data-opt-src={user && user.img}
+                        src={user && user.img}
                     />
                 }
             >
-                <Meta title={user && user.name} description="more info..." />
+                <Meta title={user && user.name} description='more info...' />
             </Card>
         </div>
     )

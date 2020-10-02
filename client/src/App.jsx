@@ -1,9 +1,5 @@
-import React, { useEffect  } from 'react'
-import {
-    Route,
-    Switch,
-    useHistory
-} from 'react-router-dom'
+import React from 'react'
+import { Route,Switch,} from 'react-router-dom'
 import './App.css'
 
 
@@ -26,19 +22,11 @@ import Header from './components/shared/header'
 
 
 export default function App() {
-    const history = useHistory()
-
-    useEffect(() => {
-        console.log(window.location.pathname)
-        history.push(window.location.pathname)
-    })
     
-
     return (
         <div className='App'>
             <div className='app-container'>
                 < Header />
-                {/* <Router history={history}> */}
                 <Switch >
                     <Route exact path="/"
                         render={() =>
