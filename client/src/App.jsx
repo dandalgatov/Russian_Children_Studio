@@ -29,7 +29,8 @@ export default function App() {
     const history = useHistory()
 
     useEffect(() => {
-        history.push(window.location)
+        console.log(window.location.pathname)
+        history.push(window.location.pathname)
     })
     
 
