@@ -1,5 +1,8 @@
 import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import {
+    Route,
+    Switch, 
+} from 'react-router-dom'
 import './App.css'
 
 
@@ -22,11 +25,13 @@ import Header from './components/shared/header'
 
 
 export default function App() {
+    // const history = useHistory()
 
     return (
         <div className='App'>
             <div className='app-container'>
                 < Header />
+                {/* <Router history={history}> */}
                 <Switch >
                     <Route exact path="/"
                         render={() =>
@@ -72,7 +77,8 @@ export default function App() {
                         render={() =>
                             <Register />
                         } /> */}
-                </Switch >
+                    </Switch >
+                    {/* </Router> */}
             </div>
         </div>
     )
