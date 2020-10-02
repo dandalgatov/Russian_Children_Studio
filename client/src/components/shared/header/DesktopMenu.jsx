@@ -1,5 +1,7 @@
 import React from 'react'
-import { useHistory, } from "react-router-dom";
+import {
+    useHistory, 
+} from "react-router-dom";
 import './Header.css'
 import { Menu } from 'antd'
 // import { Badge } from 'antd'
@@ -14,6 +16,9 @@ export default function DesktopMenu(props) {
 
         setCurrentKey(e.key)
         history.push(`/${e.key}`)
+        // <Router>
+        // return <Link to="/SomethingElse">Something else</Link>
+        // </Router>
 
     }
 

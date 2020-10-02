@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useEffect  } from 'react'
 import {
     Route,
-    Switch, 
+    Switch,
+    useHistory
 } from 'react-router-dom'
 import './App.css'
 
@@ -25,7 +26,12 @@ import Header from './components/shared/header'
 
 
 export default function App() {
-    // const history = useHistory()
+    const history = useHistory()
+
+    useEffect(() => {
+        history.push(window.location)
+    })
+    
 
     return (
         <div className='App'>
@@ -77,8 +83,8 @@ export default function App() {
                         render={() =>
                             <Register />
                         } /> */}
-                    </Switch >
-                    {/* </Router> */}
+                </Switch >
+                {/* </Router> */}
             </div>
         </div>
     )
