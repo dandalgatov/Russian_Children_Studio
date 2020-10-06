@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, Row, Col, } from 'antd';
+import { Carousel, Row, Col } from 'antd';
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 
 import Slide1 from '../../assets/images/AntCarousel/mission_slider_img1.jpeg'
@@ -45,6 +45,8 @@ export default function AntCarousel() {
 
     const imgStyle = {
         height: 'auto',
+        paddingLeft: '5px',
+        paddingRight: '5px',
         width: 'auto',
         maxHeight: '640px',
         maxWidth: '100%',
@@ -53,8 +55,8 @@ export default function AntCarousel() {
     return (
         <Row justify="center" align="middle" >
             <Col span={24} justify="center">
-                <Carousel {...settings} className='box-shadow'>
-                    <div>
+                <Carousel {...settings} >
+                    <div >
                         <img data-opt-src={Slide1} alt='slide1' style={{ ...imgStyle }} />
                     </div>
                     <div>
