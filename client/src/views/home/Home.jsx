@@ -7,10 +7,18 @@ import RusLogo from '../../assets/icons/logoRCSrus.svg'
 
 const { Panel } = Collapse;
 
-export default function Home() {
+export default function Home(props) {
+
+    const { about, clc, events, footer } = props.homepage
+    const { p1, p2, p3, } = props.about.mission
+    const { what, who, where } = about
+
+    const { call_to_action } = footer
 
 
-    
+
+
+
 
     return (
         <>
@@ -18,34 +26,9 @@ export default function Home() {
                 <AntCarousel />
             </Card>
 
-            <Row gutter={[24, 24]}>
-
-                <Col sm={24} md={10} >
-
-                    <Card bordered={false} style={{
-                        height: '100%',
-                        display: 'flex',
-                        flexFlow: 'column nowrap',
-                        alignContent: 'space-between'
-                    }}>
-                        <div>
-                            <h1 className='fg900'>HOW</h1>
-                            <p className='fg500'> Russian Language and Culture Immersion </p>
-                        </div>
-
-                        <div>
-                            <h1 className='fg900'>WHO</h1>
-                            <p className='fg500'>Children and youth 1.5-17 years old</p>
-                        </div>
-
-                        <div>
-                            <h1 className='fg900'>WHERE</h1>
-                            <p className='fg500'>Manhattan, New York City (physically) and everywhere (virtually/online)</p>
-                        </div>
-                    </Card>
-                </Col>
-
-                <Col sm={24} md={14}
+            <Row justify='space-between'>
+                {/* Mission */}
+                <Col sm={24} md={10}
                     style={{
                         height: 'auto',
                         display: 'flex',
@@ -53,22 +36,69 @@ export default function Home() {
                         alignContent: 'space-between'
                     }}>
                     <Card style={{ height: '100%' }} bordered={false}>
-                        <p className='book' style={{ textAlign: 'right' }}>
-                            <b style={{ color: '#708A86', paddingRight: '.5em' }}>
-                                Our mission 
-                            </b>
-                        is to inspire bilingual children – Russian-native speakers to achieve literacy and most importantly fall in love with Russian language and culture.<br /><br />
+                        <p className='book' style={{ textAlign: 'left' }}>
+                            <b style={{ color: '#708A86', paddingRight: '.4em' }}>{p1.b}</b>
+                            {p1.p}
+                            <br /><br />
+                            <b style={{ color: '#708A86', paddingRight: '.4em' }}>{p2.b}</b>
+                            {p2.p}
+                            <br /><br />
+                            <b style={{ color: '#708A86', paddingRight: '.4em' }}>{p3.b}</b>
+                            {p3.p}
+                        </p>
+                    </Card>
+                </Col>
 
-                            <b style={{ color: '#708A86', paddingRight: '.5em' }}>
-                                The Studio offers 
-                            </b>
-                        a physical and virtual environment for immersion into Russian language and culture, nurturing a sense of community and belonging for all interested families.<br /><br />
+                <Col  span={24} sm={24} md={14} >
+                    
+                    <Card bordered={false}>
+                        <Row>
 
-                            <b style={{ color: '#708A86', paddingRight: '.5em' }}>
-                                Founded almost a decade ago 
-                            </b>
-                        by Maria Bernsteyn in collaboration with Alla Kovgan, our Studio is a
-                        501c3 non-profit organization, which consists of the Children Learning Center and Cultural Programs.</p>
+                            <Col span={10} sm={12} md={10}>
+                                <h1 style={{ textAlighn: "center", lineHeight: ".5" }} className='fg900'>{what.q}</h1>
+                                </Col>
+
+
+                            <Col span={12} sm={10} md={12} offset={2}>
+                                <div>
+                                    <p className='fg500'>{what.a1}</p>
+                                    <p className='fg500'>{what.a2}</p>
+                                    <p className='fg500' style={{color: "#CCCDCB"}}>{what.a3}</p>
+                                </div>
+                                </Col>
+
+                        </Row>
+                    </Card>
+
+                    <Card bordered={false}>
+                        <Row>
+                            <Col span={10} sm={12} md={10}>
+                                <h1 style={{ lineHeight: ".5", color: "#708A86" }} className='fg900'>{who.q}</h1>
+                            </Col>
+                            <Col span={12} sm={10} md={12} offset={2}>
+                                <div>
+                                    <p className='fg500'>{who.a}</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    </Card>
+
+                    <Card bordered={false}>
+                        <Row>
+                            <Col span={10} sm={12} md={10}>
+                                <h1 style={{ lineHeight: ".5" }} className='fg900'>{where.q}</h1>
+                            </Col>
+                            <Col span={12} sm={10} md={12} offset={2}>
+                                <div>
+                                    <p className='fg500'>{where.a1}
+                                        <em style={{color: "#708A86"}}> {where.a1b}</em>
+                                    </p>
+                                    <p className='fg500'>{where.a2}
+                                    <em style={{color: "#708A86"}}> {where.a2b}</em>
+                                    </p>
+                                </div>
+                            </Col>
+                        </Row>
                     </Card>
                 </Col>
 
@@ -79,20 +109,20 @@ export default function Home() {
                     defaultActiveKey={['1', '2']}
                     expandIconPosition={'right'}
                 >
-                    <Panel header='Children Learning Center' key="1">
+                    <Panel header={`${clc.title}`} key="1">
                         <p className='book'>
-                            WHAT: comprehensive  programs, which include Russian Language, Literature,Logics. Art and World History, Natural Science, Theatre, Visual Arts, Performing Arts <br/>
-                            WHO: *children 1.5-4 years old (morning programs)<br/>
-                            *children 4-17 years old (afternoon programs)<br/>
-                            *NEW! online program with 4 in-person meetings<br/>
-                            *NEW! joint learning programs (during the 2020 pandemic)<br/>
-                            WHEN: New York City academic year (September - June)
+                            {clc.what} <br />
+                            {clc.who.l1}<br />
+                            {clc.who.l2}<br />
+                            {clc.who.l3}<br />
+                            {clc.who.l4}<br />
+                            {clc.when}
 
                         </p>
                     </Panel>
-                    <Panel header='Events' key="2">
+                    <Panel header={`${events.title}`} key="2">
                         <p className='book'>
-                        Twice a year, our Studio produces and presents large-scale theatre productions in December and June, which involves most of the Studio students.
+                            {events.text}
                         </p>
                     </Panel>
                 </Collapse>
@@ -101,23 +131,23 @@ export default function Home() {
 
 
 
-                <Row justify='space-between' style={{height: '10vh', padding: '0 5vh 0 5vh',}} >
+            <Row justify='space-between' style={{ height: '10vh', padding: '0 5vh 0 5vh', }} >
                 <Col className='fg900' sm={24} md={24} lg={12}>
-                
-                    <a href='/contact' style={{ color: '#708A86'}}>Reach out and join us!</a>
-                    </Col>
-                    <Col sm={24} md={24} lg={12}>
-                    <img src={RusLogo} alt="" style={{mahHeight: '5vh', width: '100%' }} />
-                    </Col>
-                </Row>
 
-                
-    
-                
-                
-                {/* Reach out and join us!
+                    <a href='/contact' style={{ color: '#708A86' }}>{call_to_action}</a>
+                </Col>
+                <Col sm={24} md={24} lg={12}>
+                    <img src={RusLogo} alt="" style={{ mahHeight: '5vh', width: '100%' }} />
+                </Col>
+            </Row>
+
+
+
+
+
+            {/* Reach out and join us!
                  <img src={RusLogo} alt="" style={{height: '10vh' , maxWidth: '50%'}} /> */}
-                
+
 
             <Row>
 

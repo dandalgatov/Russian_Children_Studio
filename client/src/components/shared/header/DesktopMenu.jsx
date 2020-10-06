@@ -8,9 +8,12 @@ import { Menu } from 'antd'
 // import { BellFilled } from '@ant-design/icons'
 
 export default function DesktopMenu(props) {
+    
     const { SubMenu } = Menu
-    const { currentKey, setCurrentKey } = props
+    const { currentKey, setCurrentKey, header } = props
+    const { About, Mission, Team, CLC, Calendar, Contact } = header
     const history = useHistory()
+
 
     const handleClick = e => {
         setCurrentKey(e.key)
@@ -31,15 +34,15 @@ export default function DesktopMenu(props) {
                 selectedKeys={currentKey}
                 mode="horizontal"
             >
-                <SubMenu key="about" title="About" onTitleClick={handleClick}
+                <SubMenu key="about" title={About} onTitleClick={handleClick}
                 // style={{ marginLeft: '5px'}}
                 >
-                    <Menu.Item key="about/#mission">Mission</Menu.Item>
-                    <Menu.Item key="about/#team">Team</Menu.Item>
+                    <Menu.Item key="about/#mission">{Mission}</Menu.Item>
+                    <Menu.Item key="about/#team">{Team}</Menu.Item>
                 </SubMenu>
-                <Menu.Item key="clc">Children Learning Center</Menu.Item>
-                <Menu.Item key="calendar">Calendar</Menu.Item>
-                <Menu.Item key="contact">Contact</Menu.Item>
+                <Menu.Item key="clc">{CLC}</Menu.Item>
+                <Menu.Item key="calendar">{Calendar}</Menu.Item>
+                <Menu.Item key="contact">{Contact}</Menu.Item>
             </Menu>
         </div>
     )

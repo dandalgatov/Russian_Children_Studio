@@ -1,19 +1,15 @@
 import React from 'react'
 import { useHistory } from "react-router-dom"
 import './Header.css'
-import { Drawer, Button, Menu, Row, Col, Switch, Badge, } from 'antd'
+import { Drawer, Menu } from 'antd'
 
 import {
     CloseOutlined,
-    MailOutlined,
-    FacebookOutlined,
-    InstagramOutlined,
-    BellFilled,
 } from '@ant-design/icons';
 
 export default function MobileMenu(props) {
     const { showDrawer, setShowDrawer, setCurrentKey, desktopMenu  } = props
-    const { SubMenu } = Menu;
+    // const { SubMenu } = Menu;
     const history = useHistory()
 
     const handleClick = e => {
@@ -24,7 +20,7 @@ export default function MobileMenu(props) {
 
     return (
         <Drawer
-            cloasable={true}
+            cloasable="true"
             style={{ color: '#708A86', }}
             placement="right"
             width={ desktopMenu ? '40vw' : '100vw'}
@@ -35,70 +31,9 @@ export default function MobileMenu(props) {
                 e.preventDefault();
                 setShowDrawer(false)
             }}
-            title={
-                <Row
-                    justify='space-between'
-                    style={{
-                        height: '5em',
-                        position: 'relative'
-                    }}
-                >
-                    <Col align='top'>
-                        <Row align="middle" justify="space-between">
-                            <Badge dot offset={[-25, 7]} >
-                                <Button type="link" size='middle'
-                                    icon={
-                                        <BellFilled
-                                            style={{
-                                                fontSize: '24px',
-                                                color: 'gold',
-                                            }}
-                                        />
-                                    }
-                                />
-                            </Badge>
-                            <Button type='link' size='middle' target='_blank'
-                                href='mailto: office@russianchildrenstudio.org'
-                                icon={
-                                    <MailOutlined
-                                        style={{
-                                            fontSize: '24px',
-                                            color: '#D44638',
-                                        }}
-                                    />
-                                }
-                            />
-                            <Button type='link' size='middle' target='_blank'
-                                href='https://www.facebook.com/Russianchildrenstudio/'
-                                icon={
-                                    <FacebookOutlined
-                                        style={{
-                                            fontSize: '24px',
-                                            color: '#3b5998'
-                                        }}
-                                    />
-                                }
-                            />
-                            <Button type='link' size='middle' target='_blank'
-                                href='https://www.instagram.com/russianchildrenstudio/'
-                                icon={
-                                    <InstagramOutlined
-                                        style={{
-                                            fontSize: '24px',
-                                            color: '#C13584'
-                                        }}
-                                    />
-                                }
-                            />
-                        </Row>
-                        <Row align="middle" justify="start" >
-                            <Button className='book-i' type='text' size='small'>eng</Button>
-                            <Switch size='small' style={{ backgroundColor: '#708A86' }} />
-                            <Button className='book-i' type='text' size='small'>rus</Button>
-                        </Row>
-                    </Col>
-                </Row>
-            }
+            // title={
+            //     "Menu"
+            // }
             footer={
                 <div className='fg500'>
                     TEL: +1 (917) 324-1740 <br />
@@ -107,18 +42,15 @@ export default function MobileMenu(props) {
                 </div>
             }
         >
-            <div style={{ display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', width: '100'}}>
+            <div style={{ display: 'flex', flexFlow: 'column nowrap', justifyContent: 'center', width: '100', alignItems: "center"}}>
                 <Menu
                     className='demi600'
                     mode="inline"
                     onClick={handleClick}
-                    defaultOpenKeys={['about']}
+                    // defaultOpenKeys={['about']}
                     style={{ color: '#708A86', display:'grid', margin: '0', padding: '0', width: '100%'}}
                 >
-                    <SubMenu key="about" title="About" >
-                        <Menu.Item key="mission" style={{ color: '#708A86' }}>Mission</Menu.Item>
-                        <Menu.Item key="team" style={{ color: '#708A86' }}>Team</Menu.Item>
-                    </SubMenu>
+                    <Menu.Item key="about">About</Menu.Item>
                     <Menu.Item key="clc">Children Learning Center</Menu.Item>
                     <Menu.Item key="calendar">Calendar</Menu.Item>
                     <Menu.Item key="contact">Contact</Menu.Item>

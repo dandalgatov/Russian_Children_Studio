@@ -22,7 +22,7 @@ export default function AntCarousel() {
         arrows: true,
         infinite: true,
         speed: 500,
-        slidesToShow: 4,
+        slidesToShow: 2,
         swipeToSlide: true,
         centerPadding: '100px',
         nextArrow: <SampleNextArrow />,

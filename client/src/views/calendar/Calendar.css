@@ -3,7 +3,7 @@
 }
 
 .ant-menu-item-selected {
-    background-color: #CCCDCB !important;
+    background-color: rgba(0, 0, 0, 0.0) !important;
 }
 
 .ant-menu-inline .ant-menu-item::after {

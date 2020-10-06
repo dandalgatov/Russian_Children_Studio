@@ -1,0 +1,132 @@
+{
+    "header": {
+        "About": "About",
+        "Mission": "Mission",
+        "Team": "Team",
+        "CLC": "Children Learning Center",
+        "Calendar": "Calendar",
+        "Contact": "Contact"
+    },
+    "homepage": {
+        "about": {
+            "what": {
+                "q": "what",
+                "a1": "Children Learning Center",
+                "a2": "Culture Events",
+                "a3": "Publishing House"
+            },
+            "who": {
+                "q": "who",
+                "a": "Children and youth 1.5-17 years old"
+            },
+            "where": {
+                "q": "where",
+                "a1": "Manhattan, New York City",
+                "a1b": "physically",
+                "a2": "and everywhere",
+                "a2b": "virtually"
+            }
+        },
+        "clc": {
+            "title": "Children Learning Center",
+            "what": "WHAT: comprehensive programs, which include Russian Language, Literature, Logics, World History, Natural Science, Theatre, Visual Arts, and Performing Arts",
+            "who": {
+                "l1": "WHO: *children 1.5-4 years old (morning programs)",
+                "l2": "*children 4-17 years old (afternoon programs)",
+                "l3": "*NEW! online program with 4 in-person meetings",
+                "l4": "*NEW! joint learning programs (during the 2020 pandemic)"
+            },
+            "when": "WHEN: New York City academic year (September - June)"
+        },
+        "events": {
+            "title": "Events",
+            "text": "Twice a year, our Studio produces and presents large-scale theatre productions in December and June, which involves most of the Studio students."
+        },
+        "footer": {
+            "call_to_action": "Reach out and join us!"
+        }
+    },
+    "about": {
+        "mission": {
+            "title": "MISSION",
+            "p1": {
+                "b": "Our Mission",
+                "p": "is to inspire bilingual children – Russian-native speakers to achieve literacy and most importantly fall in love with Russian language and culture."
+            },
+            "p2": {
+                "b": "The Studio offers",
+                "p": "a physical and virtual environment for immersion into Russian language and culture, nurturing a sense of community and belonging for all interested families."
+            },
+            "p3": {
+                "b": "Founded almost a decade ago",
+                "p": "by Maria Bernsteyn in collaboration with Alla Kovgan, our Studio is a 501c3 non-profit organization, which consists of the Children Learning Center and Cultural Programs."
+            }
+        },
+        "team": {
+            "title": "TEAM",
+            "moreInfo": "More info...",
+            "people": [
+                {
+                    "fn": "Anya",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1Ri3RPYYq4LvxrRsmNqPAiRJJKhFiOebJ"
+                },
+                {
+                    "fn": "Ayna",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=10WosTx7dVDLYgB7IxVeEV8zPqOf3mvP3"
+                },
+                {
+                    "fn": "Ilya",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1yULnRBK_exAsxjJV5zSFcytVCDKnDSGx"
+                },
+                {
+                    "fn": "Luba",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1tbrvpFF5OpNYzzZd8sHXRhwe9Xhey6G0"
+                },
+                {
+                    "fn": "Masha",
+                    "ln": "B",
+                    "img": "https://drive.google.com/uc?export=view&id=11RoPyC-Wn1J3hD6CbY2yCZ6A6SWIuvMD"
+                },
+                {
+                    "fn": "Masha",
+                    "ln": "D",
+                    "img": "https://drive.google.com/uc?export=view&id=1cfYmsuoxvHksJbcCcnmeBSGo9guwu9f9"
+                },
+                {
+                    "fn": "Masha",
+                    "ln": "F",
+                    "img": "https://drive.google.com/uc?export=view&id=1uwPbrzcSMUYW583Y1NuiFfss1R2J0GZ4"
+                },
+                {
+                    "fn": "Nadya",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1ubk8EGfv8NVImL1u2eDOxALDz78ylmto"
+                },
+                {
+                    "fn": "Natasha",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1iIIoGlbmuRt9c9x_aKToJpB8HRmDdu33"
+                },
+                {
+                    "fn": "Nina",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=14hjElf395UlEA7E6LJ5fs9m73F1q0HxG"
+                },
+                {
+                    "fn": "Tonya",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1_JX17_lyQhfO3-_DKccgMLKTIiU0n6Rk"
+                }
+            ]           
+        }
+    },
+    "contacts": {
+        "phone": "CALL US",
+        "email": "EMAIL US",
+        "location": "VISIT US"
+    }
+}

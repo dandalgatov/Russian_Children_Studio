@@ -3,7 +3,8 @@ import {withRouter} from 'react-router';
 
 import { Row, Col, Card } from 'antd';
 
-function Contact() {
+function Contact(props) {
+    const { phone, email, location } = props.contacts
     return (
         <>
             <Row gutter={[24, 24]}>
@@ -14,15 +15,15 @@ function Contact() {
                 </Col>
                 <Col sm={24} md={8}>
                     <div>
-                        <h1 className='fg900'>CALL US</h1>
+                        <h1 className='fg900'>{phone}</h1>
                         <p className='fg500'>+1 (917) 324-1740</p>
                     </div>
                     <div>
-                        <h1 className='fg900'>WRITE US</h1>
+                        <h1 className='fg900'>{email}</h1>
                         <p className='fg500'>office@russianchildrenstudio.org</p>
                     </div>
                     <div>
-                        <h1 className='fg900'>VISIT US</h1>
+                        <h1 className='fg900'>{location}</h1>
                         <p className='fg500'>225 W 99th St, New York, NY 10025</p>
                     </div>
                 </Col>

@@ -31,9 +31,10 @@
 .fg900 {
   font-family: 'FranklinGothicITC' ;
   font-weight: 900;
-  font-size: 2rem;
+  font-size: 3rem;
   color: #CCCDCB;
   margin: 0;
+  /* text-align: center; */
 
 }
 .fg900i {

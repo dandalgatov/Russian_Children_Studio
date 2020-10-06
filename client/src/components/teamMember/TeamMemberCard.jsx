@@ -5,7 +5,7 @@ const { Meta } = Card;
 
 
 export default function TeamMemberCard(props) {
-    const { user } = props
+    const { user, moreInfo } = props
     return (
         <div style={{display: 'flex', justifyContent: 'center'}}>
             <Card
@@ -15,12 +15,12 @@ export default function TeamMemberCard(props) {
                 cover={
                     <img
                         // style={{border: '10px solid black'}}
-                        alt={user && user.name}
+                        alt={user && user.fn}
                         src={user && user.img}
                     />
                 }
             >
-                <Meta title={user && user.name} description='more info...' />
+                <Meta title={user && `${user.fn} ${user.ln}`} description={moreInfo} />
             </Card>
         </div>
     )

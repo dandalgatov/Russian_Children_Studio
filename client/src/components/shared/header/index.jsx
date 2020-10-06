@@ -5,8 +5,10 @@ import DesktopMenu from './DesktopMenu'
 import MobileMenu from './MobileMenu'
 import { Anchor } from 'antd';
 
-export default function Header() {
-    // const [rus, setRus] = useState(false)
+export default function Header(props) {
+
+    const { setRu, header } = props
+
     const [mobileMenu, setMobileMenu] = useState(false)
     const [desktopMenu, setDesktopMenu] = useState(true)
     const [showDrawer, setShowDrawer] = useState(false)
@@ -20,6 +22,8 @@ export default function Header() {
         })
     }, [])
 
+    
+
     return (
         <>
             <Anchor
@@ -31,11 +35,13 @@ export default function Header() {
                 }}
             >
                 <HeaderDash
+                    setRu={setRu}
                     mobileMenu={mobileMenu}
                     setShowDrawer={setShowDrawer}
                 />
             </Anchor>
             <MobileMenu
+                header={header}
                 desktopMenu ={desktopMenu}
                 showDrawer={showDrawer}
                 setShowDrawer={setShowDrawer}
@@ -44,6 +50,7 @@ export default function Header() {
             />
             {desktopMenu ?
                 <DesktopMenu
+                    header={header}
                     currentKey={currentKey}
                     setCurrentKey={setCurrentKey}
                 /> : ''

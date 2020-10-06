@@ -1,0 +1,134 @@
+{
+    "header": {
+        "About": "О Компании",
+        "Mission": "Миссия",
+        "Team": "Команда",
+        "CLC": "Детский Учебный Центр",
+        "Calendar": "Календарь",
+        "Contact": "Контакты"
+    },
+    "homepage": {
+        "about": {
+            "what": {
+                "q": "что",
+                "a1": "Детский Образовательный Центр",
+                "a2": "Культурные События",
+                "a3": "Издательство"
+            },
+            "who": {
+                "q": "кто",
+                "a": "Дети и подростки 1.5-17 лет"
+            },
+            "where": {
+                "q": "где",
+                "a1": "Манхэттен, Нью-Йорк",
+                "a1b": "лично",
+                "a2": "и везде виртуально",
+                "a2b": "виртуально"
+            }
+        },
+        "clc": {
+            "title": "Детский Учебный Центр",
+            "what": "ЧТО: обширная программа который включает Русский язык, Литературу, Логику, Всемирную историю, Естествознание, Театр, Изобразительное искусство, и Исполнительское искусство",
+            "who": {
+                "l1": "КТО: *Дети 1.5-4 лет (утренние программы)",
+                "l2": "*Дети 4-17 лет (дневные программы)",
+                "l3": "*НОВАЯ! онлайн-программа с 4 личными встречами",
+                "l4": "*НОВАЯ! совместная программа обучения (во время пандемии 2020 года)"
+            },
+            "when": "ГДЕ: Нью-Йорк академический год (сентябрь - июнь)"
+        },
+        "events": {
+            "title": "Мероприятия",
+            "text": "Дважды в год наша студия ставит масштабные театральные постановки в Декабре и Июне, в которых участвует большинство наших студентов."
+        },
+        "footer": {
+            "call_to_action": "Обращайтесь и присоединяйтесь к нам!"
+        }
+    },
+
+    
+    "about": {
+        "mission": {
+            "title": "МИССИЯ",
+            "p1": {
+                "b": "Наша Миссия",
+                "p": "вдохновлять Руско-нативных двуязычных детей - достичь грамотности и самое главное влюбиться в русский язык и культуру."
+            },
+            "p2": {
+                "b": "Студия предлагает",
+                "p": "физическое и виртуальное пространство для полного погружение в русский язык и культуру, воспитывая чувства общности и принадлежности для всех заинтересованных семей."
+            },
+            "p3": {
+                "b": "Основанная почти 10 лет назад",
+                "p": "Марией Астафуровой совместно с Аллой Ковган, наша студия, 501c3 некоммерческая организация состоит из Образовательного Центра и Культурных Программ"
+            }
+        },
+        "team": {
+            "title": "КОМАНДА",
+            "moreInfo": "Больше информации...",
+            "people": [
+                {
+                    "fn": "Аня",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1Ri3RPYYq4LvxrRsmNqPAiRJJKhFiOebJ"
+                },
+                {
+                    "fn": "Айна",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=10WosTx7dVDLYgB7IxVeEV8zPqOf3mvP3"
+                },
+                {
+                    "fn": "Илья",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1yULnRBK_exAsxjJV5zSFcytVCDKnDSGx"
+                },
+                {
+                    "fn": "Люба",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1tbrvpFF5OpNYzzZd8sHXRhwe9Xhey6G0"
+                },
+                {
+                    "fn": "Маша",
+                    "ln": "Б.",
+                    "img": "https://drive.google.com/uc?export=view&id=11RoPyC-Wn1J3hD6CbY2yCZ6A6SWIuvMD"
+                },
+                {
+                    "fn": "Маша",
+                    "ln": "Д.",
+                    "img": "https://drive.google.com/uc?export=view&id=1cfYmsuoxvHksJbcCcnmeBSGo9guwu9f9"
+                },
+                {
+                    "fn": "Маша",
+                    "ln": "Ф.",
+                    "img": "https://drive.google.com/uc?export=view&id=1uwPbrzcSMUYW583Y1NuiFfss1R2J0GZ4"
+                },
+                {
+                    "fn": "Надя",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1ubk8EGfv8NVImL1u2eDOxALDz78ylmto"
+                },
+                {
+                    "fn": "Наташа",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1iIIoGlbmuRt9c9x_aKToJpB8HRmDdu33"
+                },
+                {
+                    "fn": "Нина",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=14hjElf395UlEA7E6LJ5fs9m73F1q0HxG"
+                },
+                {
+                    "fn": "Тоня",
+                    "ln": "",
+                    "img": "https://drive.google.com/uc?export=view&id=1_JX17_lyQhfO3-_DKccgMLKTIiU0n6Rk"
+                }
+            ]           
+        }
+    },
+    "contacts": {
+        "phone": "ПОЗВОНИТЕ НАМ",
+        "email": "НАПИШИТЕ НАМ",
+        "location": "НАВЕСТИТЕ НАС"
+    }
+}

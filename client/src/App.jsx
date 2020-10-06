@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Route,Switch,} from 'react-router-dom'
 import './App.css'
 
@@ -17,24 +17,34 @@ import HealthForm from './views/healthForm/healthForm'
 //Componenets
 import Header from './components/shared/header'
 
+//Languages
+
+import English from './assets/translations/en.json'
+import Russian from './assets/translations/ru.json'
 
 
 
 
 export default function App() {
-    
+
+    const [ru, setRu] = useState(false)
+
+    const { homepage, header, about, contacts } = ru ? Russian : English
+
+
+
     return (
         <div className='App'>
             <div className='app-container'>
-                < Header />
+                < Header header={header} setRu={setRu}/>
                 <Switch >
                     <Route exact path="/"
                         render={() =>
-                            <Home />
+                            <Home homepage={homepage} about={about} />
                         } />
                     <Route exact path="/about"
                         render={() =>
-                            <About />
+                            <About about={about}/>
                         } />
                     {/* <Route exact path="/mission"
                         render={() =>
@@ -62,7 +72,7 @@ export default function App() {
                         } />
                     <Route exact path="/contact"
                         render={() =>
-                            <Contact />
+                            <Contact contacts={contacts}/>
                         } />
                     <Route exact path="/healthform"
                         render={() =>

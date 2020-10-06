@@ -10,7 +10,7 @@ import {
 } from '@ant-design/icons';
 
 export default function HeaderDash(props) {
-    const { mobileMenu, setShowDrawer } = props
+    const { mobileMenu, setShowDrawer, setRu } = props
 
     const openNotification = () => {
         notification.open({
@@ -94,7 +94,8 @@ export default function HeaderDash(props) {
                     </Row>
                     <Row align="middle" justify="end" >
                         <Button className='book-i' type='text' size='small'>eng</Button>
-                        <Switch size='small' aria-label='Russian English Language switch'
+                        <Switch size='small' aria-label='Russian/English Switch'
+                            onChange={(e) => setRu(e)}
                             style={{ backgroundColor: '#708A86' }} />
                         <Button className='book-i' type='text' size='small'>rus</Button>
                     </Row>
