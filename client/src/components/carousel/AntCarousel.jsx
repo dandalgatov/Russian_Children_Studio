@@ -58,16 +58,16 @@ export default function AntCarousel() {
             <Col span={24} justify="center">
                 <Carousel {...settings} >
                     <div >
-                        <img data-opt-src={Slide1} alt='slide1' style={{ ...imgStyle }} />
+                        <img src={Slide1} alt='slide1' style={{ ...imgStyle }} />
                     </div>
                     <div>
-                        <img data-opt-src={Slide2} alt='slide2' style={{ ...imgStyle }} />
+                        <img src={Slide2} alt='slide2' style={{ ...imgStyle }} />
                     </div>
                     <div>
-                        <img data-opt-src={Slide4} alt='slide4' style={{ ...imgStyle }} />
+                        <img src={Slide4} alt='slide4' style={{ ...imgStyle }} />
                     </div>
                     <div>
-                        <img data-opt-src={Slide5} alt='slide5' style={{ ...imgStyle }} />
+                        <img src={Slide5} alt='slide5' style={{ ...imgStyle }} />
                     </div>
                 </Carousel>
             </Col>
