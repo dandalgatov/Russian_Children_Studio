@@ -47,6 +47,7 @@ export default function AntCarousel() {
         height: 'auto',
         paddingLeft: '5px',
         paddingRight: '5px',
+        margin: "0",
         width: 'auto',
         maxHeight: '640px',
         maxWidth: '100%',
