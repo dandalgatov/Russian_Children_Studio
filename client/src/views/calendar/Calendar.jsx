@@ -1,4 +1,4 @@
-import React  from 'react'
+import React from 'react'
 import { withRouter } from 'react-router';
 import { Row, Col, Card, Button } from 'antd';
 import { DownloadOutlined } from '@ant-design/icons';
@@ -14,21 +14,24 @@ function Calendar() {
         <Row gutter={[16, 16]} justify='center'>
             <Col xs={24} sm={24} md={24} lg={16}>
                 <Card bodyStyle={{ height: '70vh' }}>
-                    <iframe title="RCS School Calendar"src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y19uNjZsMzlqanAwN2EwcTEwNDM4M2cwa2EzMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;hl=en" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
+                    <iframe title="RCS School Calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y19uNjZsMzlqanAwN2EwcTEwNDM4M2cwa2EzMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;hl=en" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
                 </Card>
 
 
             </Col>
             <Col xs={24} sm={24} md={24} lg={8} style={{ justifyContent: 'center' }}>
 
-                <Button block default className='fg500'
-                    icon={<DownloadOutlined />} size="large"
-                    style={{ color: "#768E8A", marginBottom: "5rem" }}
-                >
-                    Download PDF
+                <a id="PDF Download" href="https://drive.google.com/uc?export=download&id=1NPK68MSRztZR0etnoX5EuIV1j6GmShaA" >
+                    <Button block default className='fg500'
+                        icon={<DownloadOutlined />} size="large"
+                        style={{ color: "#768E8A", marginBottom: "5rem" }}
+                    >
+                        Download PDF
                 </Button>
-                <div className="fg500" style={{color: "#768E8A" }}>
-                    <h1 style={{color: "#768E8A" }}>The Studio is closed:</h1>
+                </a>
+
+                <div className="fg500" style={{ color: "#768E8A" }}>
+                    <h1 style={{ color: "#768E8A" }}>The Studio is closed:</h1>
                     <ul>
                         <li>September 28, 2020 - Yom Kippur;</li>
                         <li>November 25-27, 2020 - Thanksgiving Recess;</li>
