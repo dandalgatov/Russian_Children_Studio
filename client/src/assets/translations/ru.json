@@ -42,9 +42,8 @@
             "title": "Мероприятия",
             "text": "Дважды в год наша студия ставит масштабные театральные постановки в Декабре и Июне, в которых участвует большинство наших студентов."
         },
-        "footer": {
-            "call_to_action": "Обращайтесь и присоединяйтесь к нам!"
-        }
+        "call_to_action": "Обращайтесь и присоединяйтесь к нам!"
+
     },
 
     
@@ -72,11 +71,6 @@
                     "fn": "Аня",
                     "ln": "",
                     "img": "https://drive.google.com/uc?export=view&id=1Ri3RPYYq4LvxrRsmNqPAiRJJKhFiOebJ"
-                },
-                {
-                    "fn": "Айна",
-                    "ln": "",
-                    "img": "https://drive.google.com/uc?export=view&id=10WosTx7dVDLYgB7IxVeEV8zPqOf3mvP3"
                 },
                 {
                     "fn": "Илья",
@@ -130,5 +124,8 @@
         "phone": "ПОЗВОНИТЕ НАМ",
         "email": "НАПИШИТЕ НАМ",
         "location": "НАВЕСТИТЕ НАС"
+    },
+    "footer": {
+        "call_to_action": "Обращайтесь и присоединяйтесь к нам!"
     }
 }

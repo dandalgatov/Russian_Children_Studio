@@ -1,77 +1,47 @@
 import React from 'react'
-import { Collapse, Table } from 'antd';
+import { Collapse } from 'antd';
+import { PlusOutlined, MinusOutlined, InfoCircleOutlined } from '@ant-design/icons';
 
 const { Panel } = Collapse;
 
 
-function callback(key) {
-    console.log(key);
+
+
+
+
+
+export default function classesAccordion(props) {
+  const { clc, setClassId } = props
+  console.log(clc)
+  return (
+    <Collapse
+      // onChange={callback}
+      expandIconPosition={'right'}
+      expandIcon={({ isActive }) => <span> {isActive ? <MinusOutlined /> : <PlusOutlined />}</span>}
+    >
+      {clc && clc.map((item, idx) =>
+        <Panel
+          key={idx}
+          header={
+            <>
+              <b>{item.titleAge} | {item.titleLocation} |</b> {item.title}
+            </>}
+          extra={item.details ?
+            <InfoCircleOutlined onClick={(e) => {
+              e.stopPropagation()
+              setClassId(idx + 1)
+              window.scrollTo({top: 0, behavior: 'smooth'})
+          }
+          } /> : ''}
+        >
+          <div style={{ display: "flex", flexFlow: "column nowrap" }}>
+            {item && item.summary.map((line, idx) =>
+              <line key={idx}>{line.name} | <b>{line.text}</b></line>
+            )}
+          </div>
+
+        </Panel>
+      )}
+    </Collapse>
+  )
 }
-
-const header =
-  <div>
-  
-    {/* <HomeOutlined />  */}
-    <span style={{paddingLeft: '10px'}}>4 Y.O. | IN PERSON | Winnie the Pooh / «Винни-Пухи» </span>
-  </div>
-
-
-const data = [
-    {
-      key: '1',
-      mon: '3:45 Arts | Luba B',
-      thu: '3:30 Logic & Math | Maria D',
-      fri: '3:30 Russian | Maria F',
-    },
-    {
-      key: '2',
-      mon: '4:45 Speech Development & Movement | Nina R',
-    },
-];
-
-
-const col = [
-    {
-      title: 'Monday | IN PERSON',
-      dataIndex: 'mon',
-      key: 'mon',
-    },
-    {
-      title: 'Thursday | ZOOM',
-      dataIndex: 'thu',
-      key: 'thu',
-    },
-    {
-      title: 'Friday | ZOOM',
-      dataIndex: 'fri',
-      key: 'fri',
-    },
-  ];
-
-
-
-const text = <Table pagination={false} dataSource={data} columns={col} />
-
-export default function classesAccordion() {
-    return (
-        <>
-            <Collapse
-                defaultActiveKey={['1']}
-                onChange={callback}
-                expandIconPosition={'right'}
-            >
-                <Panel style={{textAlign: 'left'}} header={header} key="1">
-                    <div>{text}</div>
-                </Panel>
-                <Panel header={header} key="2">
-                    <div>{text}</div>
-                </Panel>
-                <Panel header={header} key="3">
-                    <div>{text}</div>
-                </Panel>
-            </Collapse>
-        </>
-    )
-}
-
-

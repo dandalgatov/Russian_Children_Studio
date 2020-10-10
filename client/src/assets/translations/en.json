@@ -42,8 +42,9 @@
             "title": "Events",
             "text": "Twice a year, our Studio produces and presents large-scale theatre productions in December and June, which involves most of the Studio students."
         },
-        "footer": {
-            "call_to_action": "Reach out and join us!"
+        "publishing": {
+            "title": "Publishing House",
+            "text": "Comin Soon..."
         }
     },
     "about": {
@@ -70,11 +71,6 @@
                     "fn": "Anya",
                     "ln": "",
                     "img": "https://drive.google.com/uc?export=view&id=1Ri3RPYYq4LvxrRsmNqPAiRJJKhFiOebJ"
-                },
-                {
-                    "fn": "Ayna",
-                    "ln": "",
-                    "img": "https://drive.google.com/uc?export=view&id=10WosTx7dVDLYgB7IxVeEV8zPqOf3mvP3"
                 },
                 {
                     "fn": "Ilya",
@@ -121,12 +117,612 @@
                     "ln": "",
                     "img": "https://drive.google.com/uc?export=view&id=1_JX17_lyQhfO3-_DKccgMLKTIiU0n6Rk"
                 }
-            ]           
+            ]
         }
     },
     "contacts": {
         "phone": "CALL US",
         "email": "EMAIL US",
         "location": "VISIT US"
+    },
+    "clc": [
+        {
+            "title": "СОЛНЫШКИ",
+            "titleAge": "2 Y.O.",
+            "titleLocation": "IN-PERSON",
+            "summary": [
+                {
+                    "name": "Days",
+                    "text": "Monday, Wednesday, Friday"
+                },
+                {
+                    "name": "Hours",
+                    "text": "8:30-12:30"
+                },
+                {
+                    "name": "Students",
+                    "text": "up to 8"
+                },
+                {
+                    "name": "Teachers",
+                    "text": "Maria D & Luba B"
+                },
+                {
+                    "name": "Enrollment",
+                    "text": "2 days min"
+                },
+                {
+                    "name": "Contract and Payment",
+                    "text": "by 4-week periods"
+                },
+                {
+                    "name": "2 days/week",
+                    "text": "$876/mo."
+                },
+                {
+                    "name": "3 days/week",
+                    "text": "$1,314/mo."
+                }
+            ],
+            "details": {
+                "title": "СОЛНЫШКИ",
+                "subtitle": "В течение дня у детей в программе 3 занятия, 2 перерыва на еду, игровые перемены, сюжетные и ролевые игры, чтение вслух и обсуждение прочитанного. Ежедневная программа включает в себя различные академические дисциплины:",
+                "topics": [
+                    {
+                        "name": "Развитие речи",
+                        "bullets": [
+                            {
+                                "point": "расширение словарного запаса при изучении лексических тем"
+                            },
+                            {
+                                "point": "изучение того, как устроен мир вокруг нас на основе лексических тем"
+                            },
+                            {
+                                "point": "развитие связной речи, формирование полных предложений"
+                            },
+                            {
+                                "point": "стихи, потешки, чистоговорки"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Логика",
+                        "bullets": [
+                            {
+                                "point": "знакомство с цифрами, счет до 10"
+                            },
+                            {
+                                "point": "цвета и геометрические фигуры"
+                            },
+                            {
+                                "point": "сортировка, пазлы, шнуровки"
+                            },
+                            {
+                                "point": "развитие внимания, памяти и пространственного мышления"
+                            },
+                            {
+                                "point": "развитие логического и критического мышления"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Сенсорика",
+                        "bullets": [
+                            {
+                                "point": "знакомство с различными материалами"
+                            },
+                            {
+                                "point": "развитие мелкой моторики"
+                            },
+                            {
+                                "point": "пальчиковые игры"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Творческая деятельность",
+                        "bullets": [
+                            {
+                                "point": "развитие образного мышления"
+                            },
+                            {
+                                "point": "аппликация"
+                            },
+                            {
+                                "point": "конструирование"
+                            },
+                            {
+                                "point": "рисование различными материалами"
+                            },
+                            {
+                                "point": "лепка"
+                            },
+                            {
+                                "point": "коллажи"
+                            },
+                            {
+                                "point": "рукоделие для малышей"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Двигательная и активность",
+                        "bullets": [
+                            {
+                                "point": "подвижные игры"
+                            },
+                            {
+                                "point": "песни с движениями"
+                            },
+                            {
+                                "point": "ритмика"
+                            },
+                            {
+                                "point": "гимнастика"
+                            },
+                            {
+                                "point": "игры на развитие крупной моторики, координации движений и чувства ритма"
+                            }
+                        ]
+                    },
+                    {
+                        "name": "Важной частью программы также является мягкая адаптация к групповым занятиям и развитие социальных навыков:",
+                        "bullets": [
+                            {
+                                "point": "общения, взаимодействия, совместной игры"
+                            },
+                            {
+                                "point": "способа разрешения конфликтных ситуаций"
+                            },
+                            {
+                                "point": "правил поведения в группе, за столом, во время занятий"
+                            },
+                            {
+                                "point": "самостоятельности в бытовых ситуациях"
+                            }
+                        ]
+                    }
+                ]
+            }
+            
+            
+        },
+        {
+            "title": "ОДУВАНЧИКИ",
+            "titleAge": "3 Y.O.",
+            "titleLocation": "IN-PERSON",
+            "summary": [
+                {
+                    "name": "Days",
+                    "text": "Monday, Wednesday, Friday"
+                },
+                {
+                    "name": "Hours",
+                    "text": "8:30-12:30"
+                },
+                {
+                    "name": "Students",
+                    "text": "up to 8"
+                },
+                {
+                    "name": "Teachers",
+                    "text": "Maria D & Luba B"
+                },
+                {
+                    "name": "Enrollment",
+                    "text": "2 days min"
+                },
+                {
+                    "name": "Contract and Payment",
+                    "text": "by 4-week periods"
+                },
+                {
+                    "name": "2 days/week",
+                    "text": "$876/mo."
+                },
+                {
+                    "name": "3 days/week",
+                    "text": "$1,314/mo."
+                }
+            ]
+        },
+        {
+            "title": "ОДУВАНЧИКИ",
+            "titleAge": "3 Y.O.",
+            "titleLocation": "ONLINE",
+            "summary": [
+                {
+                    "name": "Enrollment",
+                    "text": "1 to 3 classes"
+                },
+                {
+                    "name": "Fee",
+                    "text": "$25/class payable per semester per subject"
+                },
+                {
+                    "name": "Tuesday | 3:30",
+                    "text": "Russian | Maria D"
+                },
+                {
+                    "name": "Wednesday | 3:30",
+                    "text": "The World Around Us | Maria F"
+                },
+                {
+                    "name": "Thursday | 3:30 ",
+                    "text": "Math and Logic | Maria D"
+                }
+            ]
+        },
+        {
+            "title": "ВИННИ-ПУХИ ",
+            "titleAge": "4 Y.O.",
+            "titleLocation": "ONLINE",
+            "summary": [
+                {
+                    "name": "Enrollment",
+                    "text": "1 to 3 classes"
+                },
+                {
+                    "name": "Fee",
+                    "text": "$25/class payable per semester per subject"
+                },
+                {
+                    "name": "Tuesday | 3:30",
+                    "text": "Russian | Maria D"
+                },
+                {
+                    "name": "Wednesday | 3:30",
+                    "text": "The World Around Us | Maria F"
+                },
+                {
+                    "name": "Thursday | 3:30 ",
+                    "text": "Math and Logic | Maria D"
+                }
+            ]
+        },
+        {
+            "title": "МАТРОСКИНЫ",
+            "titleAge": "5 Y.O.",
+            "titleLocation": "IN-PERSON",
+            "summary": [
+                {
+                    "name": "Days",
+                    "text": "Monday"
+                },
+                {
+                    "name": "Hours",
+                    "text": "3:30-5:30"
+                },
+                {
+                    "name": "Subject",
+                    "text": "Russian: Grammar and Reading the World Around Us"
+                },
+                {
+                    "name": "Students",
+                    "text": "up to 10"
+                },
+                {
+                    "name": "Teachers",
+                    "text": "Maria F"
+                },
+                {
+                    "name": "Contract and Payment",
+                    "text": "by 4-week periods"
+                },
+                {
+                    "name": "September 2020",
+                    "text": "$146"
+                },
+                {
+                    "name": "October 2020",
+                    "text": "$292"
+                },
+                {
+                    "name": "November 2020",
+                    "text": "$365"
+                },
+                {
+                    "name": "December 2020",
+                    "text": "$219"
+                }
+            ]
+        },
+        {
+            "title": "JOINT LEARNING PROGRAM",
+            "titleAge": "5 Y.O.",
+            "titleLocation": "IN-PERSON",
+            "summary": [
+                {
+                    "name": "Days",
+                    "text": "Monday, Wednesday, Friday"
+                },
+                {
+                    "name": "Hours",
+                    "text": "8:30 – 2:30"
+                },
+                {
+                    "name": "Students",
+                    "text": "up to 10"
+                },
+                {
+                    "name": "Teachers",
+                    "text": "Nina R"
+                },
+                {
+                    "name": "Enrollment",
+                    "text": "flexible, any number of days per month"
+                },
+                {
+                    "name": "Contract and Payment",
+                    "text": "by 4-week periods"
+                },
+                {
+                    "name": "Daily Fee",
+                    "text": "$110"
+                }
+            ]
+        },
+        {
+            "title": "МУМИ-ТРОЛЛИ",
+            "titleAge": "6 Y.O.",
+            "titleLocation": "IN-PERSON",
+            "summary": [
+                {
+                    "name": "Days",
+                    "text": "Monday"
+                },
+                {
+                    "name": "Hours",
+                    "text": "3:30-5:30"
+                },
+                {
+                    "name": "Subject",
+                    "text": "Russian Grammar, Reading, & Literature"
+                },
+                {
+                    "name": "Students",
+                    "text": "up to 10"
+                },
+                {
+                    "name": "Teachers",
+                    "text": "Maria D"
+                },
+                {
+                    "name": "Contract and Payment",
+                    "text": "by 4-week periods"
+                },
+                {
+                    "name": "September 2020",
+                    "text": "$146"
+                },
+                {
+                    "name": "October 2020",
+                    "text": "$292"
+                },
+                {
+                    "name": "November 2020",
+                    "text": "$365"
+                },
+                {
+                    "name": "December 2020",
+                    "text": "$219"
+                }
+            ]
+        },
+        {
+            "title": "МУМИ-ТРОЛЛИ",
+            "titleAge": "6 Y.O.",
+            "titleLocation": "ONLINE",
+            "summary": [
+                {
+                    "name": "Enrollment",
+                    "text": "1 to 2 classes"
+                },
+                {
+                    "name": "Fee",
+                    "text": "$25/class payable per semester per subject"
+                },
+                {
+                    "name": "Tuesday | 4:30",
+                    "text": "Russian | Maria D"
+                },
+                {
+                    "name": "Thursday | 3:30 ",
+                    "text": "Art History | Nadya Z"
+                }
+            ]
+        },
+        {
+            "title": "ФИНДУСЫ и ПЕТСОНЫ",
+            "titleAge": "7-8 Y.O.",
+            "titleLocation": "INPERSON",
+            "summary": [
+                {
+                    "name": "Days",
+                    "text": "Monday"
+                },
+                {
+                    "name": "Hours",
+                    "text": "3:30-5:30"
+                },
+                {
+                    "name": "Subject",
+                    "text": "Russian Grammar, Reading, & Literature"
+                },
+                {
+                    "name": "Students",
+                    "text": "up to 10"
+                },
+                {
+                    "name": "Teachers",
+                    "text": "Maria B"
+                },
+                {
+                    "name": "Contract and Payment",
+                    "text": "by 4-week periods"
+                },
+                {
+                    "name": "September 2020",
+                    "text": "$146"
+                },
+                {
+                    "name": "October 2020",
+                    "text": "$292"
+                },
+                {
+                    "name": "November 2020",
+                    "text": "$365"
+                },
+                {
+                    "name": "December 2020",
+                    "text": "$219"
+                }
+            ]
+        },
+        {
+            "title": "ПОЧЕМУЧКИ",
+            "titleAge": "7-8 Y.O.",
+            "titleLocation": "ONLINE",
+            "summary": [
+                {
+                    "name": "Enrollment",
+                    "text": "1 to 2 classes"
+                },
+                {
+                    "name": "Fee",
+                    "text": "$25/class payable per semester per subject"
+                },
+                {
+                    "name": "Wednesday | 4:30",
+                    "text": "Russian | Maria B"
+                },
+                {
+                    "name": "Friday | 4:30",
+                    "text": "Literature | Maria B"
+                }
+            ]
+        },
+        {
+            "title": "ПИНГВИНЫ",
+            "titleAge": "9 Y.O.",
+            "titleLocation": "ONLINE",
+            "summary": [
+                {
+                    "name": "Enrollment",
+                    "text": "1 to 3 classes"
+                },
+                {
+                    "name": "Fee",
+                    "text": "$25/class payable per semester per subject"
+                },
+                {
+                    "name": "Monday | 4:30",
+                    "text": "History & Geography | Tonya L"
+                },
+                {
+                    "name": "Thursday | 4:30",
+                    "text": "Film Club| Ilya B"
+                },
+                {
+                    "name": "Thursday | 5:30",
+                    "text": "Russian | Maria D"
+                }
+            ]
+        },
+        {
+            "title": "ФИКСИКИ",
+            "titleAge": "10 Y.O.",
+            "titleLocation": "ONLINE",
+            "summary": [
+                {
+                    "name": "Enrollment",
+                    "text": "1 to 3 classes"
+                },
+                {
+                    "name": "Fee",
+                    "text": "$25/class payable per semester per subject"
+                },
+                {
+                    "name": "Monday | 4:30",
+                    "text": "History & Geography | Tonya L"
+                },
+                {
+                    "name": "Tuesday | 5:00",
+                    "text": "Russian | Maria B"
+                },
+                {
+                    "name": "Thursday | 4:30",
+                    "text": "Film Club| Ilya B"
+                }
+            ]
+        },
+        {
+            "title": "БАОБАБЫ",
+            "titleAge": "10-14 Y.O.",
+            "titleLocation": "ONLINE",
+            "summary": [
+                {
+                    "name": "Enrollment",
+                    "text": "1 to 2 classes"
+                },
+                {
+                    "name": "Fee",
+                    "text": "$25/class payable per semester per subject"
+                },
+                {
+                    "name": "Monday | 4:30",
+                    "text": "History & Geography | Tonya L"
+                },
+                {
+                    "name": "Thursday | 4:30",
+                    "text": "Film Club| Ilya B"
+                }
+            ]
+        },
+        {
+            "title": "АНДЕРСЕНЫ",
+            "titleAge": "11 Y.O.",
+            "titleLocation": "ONLINE",
+            "summary": [
+                {
+                    "name": "Enrollment",
+                    "text": "1 to 3 classes"
+                },
+                {
+                    "name": "Fee",
+                    "text": "$25/class payable per semester per subject"
+                },
+                {
+                    "name": "Monday | 4:30",
+                    "text": "History & Geography | Tonya L"
+                },
+                {
+                    "name": "Tuesday | 5:00",
+                    "text": "Russian | Maria B"
+                },
+                {
+                    "name": "Thursday | 4:30",
+                    "text": "Film Club| Ilya B"
+                }
+            ]
+        },
+        {
+            "title": "АКСАКАЛЫ",
+            "titleAge": "14-16 Y.O.",
+            "titleLocation": "ONLINE",
+            "summary": [
+                {
+                    "name": "Fee",
+                    "text": "$25/class payable per semester per subject"
+                },
+                {
+                    "name": "Monday | 4:00",
+                    "text": "Close Reading: Russian Classics | Ilya B"
+                }
+            ]
+        }
+    ],
+    "footer": {
+        "call_to_action": "Reach out and join us!"
     }
 }

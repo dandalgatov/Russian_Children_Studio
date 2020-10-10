@@ -16,6 +16,7 @@ import HealthForm from './views/healthForm/healthForm'
 
 //Componenets
 import Header from './components/shared/header'
+import Footer from './components/shared/footer'
 
 //Languages
 
@@ -29,7 +30,7 @@ export default function App() {
 
     const [ru, setRu] = useState(false)
 
-    const { homepage, header, about, contacts } = ru ? Russian : English
+    const { homepage, header, about, contacts, clc, footer } = ru ? Russian : English
 
 
 
@@ -56,7 +57,7 @@ export default function App() {
                         } /> */}
                     <Route exact path="/clc"
                         render={() =>
-                            <ChildrenLearningCenter />
+                            <ChildrenLearningCenter clc={clc}/>
                         } />
                     {/* <Route exact path="/online"
                         render={() =>
@@ -84,7 +85,9 @@ export default function App() {
                         } /> */}
                 </Switch >
                 {/* </Router> */}
+                <Footer footer={footer}/>
             </div>
+           
         </div>
     )
 }
