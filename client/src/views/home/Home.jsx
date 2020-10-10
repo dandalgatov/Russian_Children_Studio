@@ -25,6 +25,7 @@ export default function Home(props) {
 
                     <Collapse
                         className='fg900'
+                        style={{fontSize: "1rem"}}
                         expandIconPosition={'right'}
                         expandIcon={({ isActive }) => <span> {isActive? <MinusOutlined /> : <PlusOutlined/>}</span>}
                         
