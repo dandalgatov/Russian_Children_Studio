@@ -16,7 +16,7 @@ function Contact(props) {
                 <Col span={24} lg={8}>
                     <div>
                         <h1 className='fg900'>{phone}</h1>
-                        <p className='fg500'>+1 (917) 324-1740</p>
+                        <p className='fg500'>+1 (917) 409-2888</p>
                     </div>
                     <div>
                         <h1 className='fg900'>{email}</h1>

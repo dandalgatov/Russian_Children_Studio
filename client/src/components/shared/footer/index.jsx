@@ -31,7 +31,7 @@ export default function index(props) {
 
                         <Row justify='end' align='middle'>
                                 <PhoneOutlined style={{ ...iconStyle }} />
-                                +1 (917) 324-1740
+                                +1 (917) 409-2888
                         </Row>
                         <Row justify='end' align='middle'>
                             <MailOutlined style={{ ...iconStyle }} />
