@@ -12,14 +12,14 @@ function Calendar() {
     return (
 
         <Row gutter={[16, 16]} justify='center'>
-            <Col xs={24} sm={24} md={24} lg={16}>
+            <Col span={24} lg={16}>
                 <Card bodyStyle={{ height: '70vh' }}>
                     <iframe title="RCS School Calendar" src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=America%2FNew_York&amp;src=Y19uNjZsMzlqanAwN2EwcTEwNDM4M2cwa2EzMEBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&amp;color=%23EF6C00&amp;showTitle=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;hl=en" width="100%" height="100%" frameBorder="0" scrolling="no"></iframe>
                 </Card>
 
 
             </Col>
-            <Col xs={24} sm={24} md={24} lg={8} style={{ justifyContent: 'center' }}>
+            <Col span={24} lg={8} style={{ justifyContent: 'center' }}>
 
                 <a id="PDF Download" href="https://drive.google.com/uc?export=download&id=1NPK68MSRztZR0etnoX5EuIV1j6GmShaA" >
                     <Button block default className='fg500'

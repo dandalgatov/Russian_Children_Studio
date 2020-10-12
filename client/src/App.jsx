@@ -7,7 +7,7 @@ import './App.css'
 import Home from './views/home/Home'
 import About from './views/about/About'
 
-import ChildrenLearningCenter from './views/clc/ChildrenLearningCenter'
+import CLCPrograms from './views/clc/CLCPrograms'
 
 import Calendar from './views/calendar/Calendar'
 import Contact from './views/contact/Contact'
@@ -57,7 +57,7 @@ export default function App() {
                         } /> */}
                     <Route exact path="/clc"
                         render={() =>
-                            <ChildrenLearningCenter clc={clc}/>
+                            <CLCPrograms clc={clc}/>
                         } />
                     {/* <Route exact path="/online"
                         render={() =>

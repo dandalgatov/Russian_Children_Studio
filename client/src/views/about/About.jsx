@@ -1,6 +1,6 @@
 
 import React from 'react'
-import {withRouter} from 'react-router';
+import { withRouter } from 'react-router';
 import { Card, Row, Col } from 'antd';
 // import Anya from '../../assets/images/StaffPhotos/Anya.jpeg'
 // import Ayna from '../../assets/images/StaffPhotos/Ayna.jpeg'
@@ -21,19 +21,31 @@ import TeamMemberCard from '../../components/teamMember/TeamMemberCard'
 
 function About(props) {
     const { about } = props
-    const {mission, team} = about
-    const { p1, p2, p3,} = mission
-    const { people, moreInfo} = team
+    const { mission, team } = about
+    const { p1, p2, p3, } = mission
+    const { people, moreInfo } = team
 
 
     return (
         <div>
-            <a href="mission">
-                <h1 className='fg900' style={{ textAlign: 'center' }} >{mission.title}</h1>
-            </a>
 
-            <Card style={{ height: '100%', paddingTop: '10vh', paddingBottom: '10vh' }} bordered={false}>
-                        <p className='book' style={{ textAlign: 'center' }}>
+            <Row>
+                <Col span={24} lg={24}>
+                <h1 className='fg900' style={{ textAlign: 'center', paddingBottom: '1rem' }} >{team.title}</h1>
+                <Row justify='center' gutter={[16, 16]}>
+           
+                {people && people.map((user) =>
+                    <Col xs={24} sm={12} md={6} lg={6} xl={6} key={user.img}>
+                        <TeamMemberCard user={user} moreInfo={moreInfo} />
+                    </Col>
+
+                )}
+            </Row>
+                </Col>
+                <Col span={24} lg={8}>
+                <h1 className='fg900' style={{ textAlign: 'center' }} >{mission.title}</h1>
+                    <Card style={{ height: '100%', paddingTop: '1rem', paddingBottom: '10vh' }} bordered={false}>
+                        <p className='book' style={{ textAlign: 'center', }}>
                             <b style={{ color: '#708A86', paddingRight: '.4em' }}>{p1.b}</b>
                             {p1.p}
                             <br /><br />
@@ -43,19 +55,12 @@ function About(props) {
                             <b style={{ color: '#708A86', paddingRight: '.4em' }}>{p3.b}</b>
                             {p3.p}
                         </p>
-            </Card>
-            <a href="team">
-                <h1 className='fg900' style={{ textAlign: 'center', paddingBottom: '10vh' }} >{team.title}</h1>
-            </a>
-            <Row justify='center' gutter={[16, 16]}>
-
-                {people && people.map((user) =>
-                    <Col xs={24} sm={24} md={12} lg={6} xl={6} key={user.img}>
-                        <TeamMemberCard user={user} moreInfo={moreInfo}/>
-                    </Col>
-
-                )}
+                    </Card>
+                </Col>
             </Row>
+
+            
+           
 
         </div>
     )

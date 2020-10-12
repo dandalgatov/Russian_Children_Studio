@@ -8,7 +8,7 @@
 
 
 .ant-menu-item-selected {
-	background: transparent;
+	/* background: red; */
 }
 
 .ant-drawer-body {
@@ -34,7 +34,7 @@
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open, 
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, 
 .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected {
-  border-bottom: 2px solid #768E8A;
+  border-bottom: 0px ;
   color: #768E8A !important; 
 }
 
@@ -123,13 +123,21 @@
 
 
 .mobile-menu-visible{
-  font-size: 54px;
+  font-size: 45px !important;
   color: #708A86;
-  transition: font-size .5s ease;
+  transition: font-size 1s ease;
 }
 
 .mobile-menu-hidden{
-  font-size: 0px;
+  font-size: 0px !important;
   color: #708A86;
-  transition: font-size .5s ease;
+  transition: font-size 1s ease;
+}
+
+.ant-menu-vertical{
+  padding: 1rem !important;
+}
+
+.ant-menu-root {
+  padding: 0 !important;
 }

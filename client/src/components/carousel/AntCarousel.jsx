@@ -1,5 +1,6 @@
 import React from 'react';
 import { Carousel, } from 'antd';
+// import { RightOutlined, LeftOutlined } from '@ant-design/icons';
 
 
 // import Slide1 from '../../assets/images/AntCarousel/mission_slider_img1.jpeg'
@@ -18,11 +19,11 @@ export default function AntCarousel() {
 
     // const SampleNextArrow = props => <RightOutlined
     //     className={props.className} onClick={props.onClick}
-    //     style={{ ...props.style, color: 'black', fontSize: '15px', }}
+    //     style={{ ...props.style, color: 'black', fontSize: '32px', }}
     // />
     // const SamplePrevArrow = props => <LeftOutlined
     //     className={props.className} onClick={props.onClick}
-    //     style={{ ...props.style, color: 'black', fontSize: '15px', }}
+    //     style={{ ...props.style, color: 'black', fontSize: '32px', }}
     // />
 
     const settings = {
@@ -35,20 +36,20 @@ export default function AntCarousel() {
         centerPadding: '100px',
         // nextArrow: <SampleNextArrow />,
         // prevArrow: <SamplePrevArrow />,
-        // responsive: [
-        //     {
-        //         breakpoint: 992,
-        //         settings: {
-        //             slidesToShow: 2,
-        //         }
-        //     },
-        //     {
-        //             breakpoint: 767,
-        //         settings: {
-        //             slidesToShow: 1,
-        //         }
-        //     }
-        // ]
+        responsive: [
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                    breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                }
+            }
+        ]
     }
 
     const imgStyle = {
