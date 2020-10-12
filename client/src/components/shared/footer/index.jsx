@@ -22,9 +22,9 @@ export default function index(props) {
                         <Row className='fg900' align='middle' style={{ color: '#708A86', fontSize: '2rem', }}>
                             {call_to_action}
                         </Row>
-                        <Row >
+                        {/* <Row >
                             Copyright © 2020 Russian Children Studio
-                        </Row>
+                        </Row> */}
                     </Col>
 
                     <Col span={24} md={10}>
